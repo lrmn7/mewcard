@@ -1,4 +1,4 @@
-declare class musicCard {
+declare class mewcard {
   constructor(options?: {
     name?: string;
     author?: string;

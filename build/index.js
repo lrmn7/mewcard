@@ -1,3 +1,3 @@
-const { musicCard } = require("./structures/musicCard");
+const { mewcard } = require("./structures/mewcard");
 
-module.exports = { musicCard };
+module.exports = { mewcard };
