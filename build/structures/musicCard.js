@@ -43,7 +43,7 @@ class musicCard {
     }
 
     setTheme(theme) {
-        this.theme = 'dynamic';
+        this.theme = 'classic';
         return this;
     }
 
@@ -82,7 +82,7 @@ class musicCard {
         if (!this.author) throw new Error('Missing author parameter');
         if (!this.requester) throw new Error('Missing requester parameter');
         if (!this.color) this.setColor('ff0000');
-        if (!this.theme) this.setTheme('dynamic');
+        if (!this.theme) this.setTheme('classic');
         if (!this.brightness) this.setBrightness(0);
         if (!this.thumbnail) this.setThumbnail('https://s6.imgcdn.dev/Opo4a.jpg');
         if (!this.progress) this.setProgress(0);
@@ -108,7 +108,7 @@ class musicCard {
         if (this.author.replace(/\s/g, '').length > 15) this.author = `${this.author.slice(0, 15)}...`;
         if (this.requester.replace(/\s/g, '').length > 35) this.requester = `${this.requester.slice(0, 35)}...`;
 
-        if (this.theme == 'dynamic') {
+        if (this.theme == 'classic') {
             const frame = canvas.createCanvas(800, 200);
             const ctx = frame.getContext("2d");
 
@@ -254,7 +254,7 @@ class musicCard {
 
             return frame.toBuffer("image/png");
         } else {
-            throw new Error('Invalid theme parameter, must be "classic" or "dynamic"');
+            throw new Error('Invalid theme parameter, must be "classic" or "classic"');
         }
     }
 }
