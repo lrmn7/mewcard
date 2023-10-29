@@ -1,4 +1,4 @@
-export declare class musicCard {
+declare class musicCard {
   constructor(options?: {
     name?: string;
     author?: string;
@@ -20,6 +20,9 @@ export declare class musicCard {
   public setProgress(progress: number): this;
   public setStartTime(starttime: string): this;
   public setEndTime(endtime: string): this;
+
+  // Tambahkan metode setRequester ke definisi tipe
+  public setRequester(requester: string): this;
 
   public build(): Promise<Buffer>;
 }
