@@ -236,7 +236,7 @@ class musicCard {
 
 
             ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
-            ctx.fillStyle = "#fff";
+            ctx.fillStyle = "3d3d3e";
             // Position the "author" text next to "requester"
             const authorText = this.author + ' ' + this.requester;
             ctx.fillText(authorText, 250, 120);
