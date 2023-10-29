@@ -1,5 +1,5 @@
 {
-  "name": "musicard",
+  "name": "mewcard",
   "version": "1.5.0",
   "description": "Experience your Discord bot's music in a visual format.",
   "main": "build/index.js",
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/A3PIRE/musicard.git"
+    "url": "https://github.com/lrmn7/mewcard.git"
   },
   "bugs": {
-    "url": "https://github.com/A3PIRE/musicard/issues"
+    "url": "https://github.com/lrmn7/mewcard/issues"
   }
 }
