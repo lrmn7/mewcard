@@ -73,7 +73,7 @@ class mewcard {
     }
 
     setRequester(requester) {
-        this.requester = `• ${requester}`;
+        this.requester = `${requester}`;
         return this;
     }
 
@@ -230,16 +230,24 @@ class mewcard {
             // Mengatur warna teks secara acak dari array yang diizinkan
             ctx.font = "bold 38px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
-            ctx.fillText(this.name, 250, 90);
-
-
+            ctx.fillText(this.name, 250, 90);            
 
 
             ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
-            ctx.fillStyle = "3d3d3e";
-            // Position the "author" text next to "requester"
-            const authorText = this.author + ' ' + this.requester;
-            ctx.fillText(authorText, 250, 120);
+
+            // Warna untuk "author" (misalnya, merah)
+            ctx.fillStyle = '#FF0000';
+            ctx.fillText(this.author, 250, 120);
+            
+            // Warna untuk "requester" (misalnya, biru)
+            ctx.fillStyle = getRandomColor();
+            ctx.fillText(this.requester, 410, 120); // Ganti posisi jika diperlukan
+            
+            // Tambahkan pembatas "•" dengan warna hitam
+            ctx.fillStyle = '#000000';
+            ctx.fillText(' • ', 390, 120); // Ganti posisi jika diperlukan
+            
+            
 
             ctx.fillStyle = '#000000';
             ctx.font = '18px circular-std';
@@ -254,7 +262,7 @@ class mewcard {
 
             return frame.toBuffer("image/png");
         } else {
-            throw new Error('Invalid theme parameter, must be "classic" or "classic"');
+            throw new Error('Invalid theme parameter, must be classic');
         }
     }
 }
