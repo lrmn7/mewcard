@@ -235,17 +235,14 @@ class mewcard {
 
             ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
 
-            // Warna untuk "author" (misalnya, merah)
-            ctx.fillStyle = '#FF0000';
-            ctx.fillText(this.author, 250, 120);
-            
-            // Warna untuk "requester" (misalnya, biru)
-            ctx.fillStyle = getRandomColor();
-            ctx.fillText(this.requester, 410, 120); // Ganti posisi jika diperlukan
-            
-            // Tambahkan pembatas "•" dengan warna hitam
-            ctx.fillStyle = '#000000';
-            ctx.fillText(' • ', 390, 120); // Ganti posisi jika diperlukan
+// Warna untuk "author" (misalnya, merah)
+ctx.fillStyle = '#FF0000';
+ctx.fillText(this.author, 250, 120);
+
+// Warna untuk "requester" (misalnya, biru)
+ctx.fillStyle = getRandomColor();
+ctx.fillText(this.requester, 250 + ctx.measureText(this.author).width + 10, 120);
+
             
             
 
