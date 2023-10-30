@@ -1,4 +1,4 @@
-declare class mewcard {
+export declare class mewcard {
   constructor(options?: {
     name?: string;
     author?: string;
@@ -20,8 +20,6 @@ declare class mewcard {
   public setProgress(progress: number): this;
   public setStartTime(starttime: string): this;
   public setEndTime(endtime: string): this;
-
-  // Tambahkan metode setRequester ke definisi tipe
   public setRequester(requester: string): this;
 
   public build(): Promise<Buffer>;
