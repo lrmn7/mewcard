@@ -1,8 +1,8 @@
 (async () => {
-    const { musicCard } = require("musicard");
+    const { mewcard } = require("mewcard");
     const fs = require("fs");
 
-    const card = new musicCard()
+    const card = new mewcard()
         .setName("Bad Habits")
         .setAuthor("By Ed Sheeran")
         .setColor("auto")
@@ -15,6 +15,6 @@
 
     const cardBuffer = await card.build();
 
-    fs.writeFileSync(`musicCard.png`, cardBuffer);
+    fs.writeFileSync(`mewcard.png`, cardBuffer);
     console.log("Done!");
 })()
