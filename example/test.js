@@ -11,7 +11,7 @@
         .setThumbnail("https://cdn.is-a.fun/mewwme/mewwme.png")
         .setProgress(10)
         .setStartTime("0:00")
-        .setEndTime("3:00")
+        .setEndTime("04:27")
 
     const cardBuffer = await card.build();
 
