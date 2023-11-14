@@ -230,21 +230,21 @@ class mewcard {
             // Mengatur warna teks secara acak dari array yang diizinkan
             ctx.font = "bold 38px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
-            ctx.fillText(this.name, 250, 90);            
+            ctx.fillText(this.name, 250, 90);
 
 
             ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
 
-// Warna untuk "author" (misalnya, merah)
-ctx.fillStyle = '#FF0000';
-ctx.fillText(this.author, 250, 120);
+            // Warna untuk "author" (misalnya, merah)
+            ctx.fillStyle = '#FF0000';
+            ctx.fillText(this.author, 250, 120);
 
-// Warna untuk "requester" (misalnya, biru)
-ctx.fillStyle = getRandomColor();
-ctx.fillText(this.requester, 250 + ctx.measureText(this.author).width + 10, 120);
+            // Warna untuk "requester" (misalnya, biru)
+            ctx.fillStyle = getRandomColor();
+            ctx.fillText(this.requester, 250 + ctx.measureText(this.author).width + 10, 120);
 
-            
-            
+
+
 
             ctx.fillStyle = '#000000';
             ctx.font = '18px circular-std';

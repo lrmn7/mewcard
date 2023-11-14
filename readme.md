@@ -22,7 +22,7 @@ This example code will generate a music card image and save it.
         .setThumbnail("https://cdn.is-a.fun/mewwme/mewwme.png")
         .setProgress(10)
         .setStartTime("0:00")
-        .setEndTime("3:00")
+        .setEndTime("04:27")
 
     const cardBuffer = await card.build();
 
