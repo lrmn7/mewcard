@@ -3,42 +3,44 @@
 
 # __Installation__
 ```
-npm install musicard
+npm install mewcard
 ```
 
 # __Example__
 This example code will generate a music card image and save it.
 ```js
 (async () => {
-    const { musicCard } = require("musicard");
+    const { mewcard } = require("mewcard");
     const fs = require("fs");
 
-    const card = new musicCard()
-        .setName("Bad Habits")
-        .setAuthor("By Ed Sheeran")
+    const card = new mewcard()
+        .setName("Biru Baru")
+        .setAuthor("Sejenak")
         .setColor("auto")
-        .setTheme("dynamic")
+        .setTheme("classic")
         .setBrightness(50)
-        .setThumbnail("https://static.qobuz.com/images/covers/ga/ua/rmk2cpqliuaga_600.jpg")
+        .setThumbnail("https://cdn.is-a.fun/mewwme/mewwme.png")
         .setProgress(10)
         .setStartTime("0:00")
         .setEndTime("3:00")
 
     const cardBuffer = await card.build();
 
-    fs.writeFileSync(`musicard.png`, cardBuffer);
+    fs.writeFileSync(`mewcard.png`, cardBuffer);
     console.log("Done!");
 })()
 ```
 
 # __Output__
 This is the **classic** output of musicard.
-![classic](https://s6.imgcdn.dev/ZDw99.png)
+![classic](/example/mewcard.png)
 
-This is the **dynamic** output of musicard.
-![dynamic](https://s6.imgcdn.dev/ZD6Jy.png)
+# Originial Source
 
+```
+https://github.com/a3pire
+```
 # Projects
 |  Sr.  |            Name            |  Platform  |
 |:-----:|:--------------------------:|:----------:|
-| **1** | [Riffy Music Bot (Official)](https://github.com/riffy-team/riffy-music-bot) | discord.js |
+| **1** | [Mewwme's Music](https://discord.com/api/oauth2/authorize?client_id=928711702596423740&permissions=2184571952&scope=bot%20applications.commands) | discord.js |

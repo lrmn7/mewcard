@@ -3,12 +3,12 @@
     const fs = require("fs");
 
     const card = new mewcard()
-        .setName("Bad Habits")
-        .setAuthor("By Ed Sheeran")
+        .setName("Biru Baru")
+        .setAuthor("Sejenak")
         .setColor("auto")
-        .setTheme("dynamic")
+        .setTheme("classic")
         .setBrightness(50)
-        .setThumbnail("https://static.qobuz.com/images/covers/ga/ua/rmk2cpqliuaga_600.jpg")
+        .setThumbnail("https://cdn.is-a.fun/mewwme/mewwme.png")
         .setProgress(10)
         .setStartTime("0:00")
         .setEndTime("3:00")
