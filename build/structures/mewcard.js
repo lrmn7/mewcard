@@ -62,15 +62,7 @@ class mewcard {
         return this;
     }
 
-    setStartTime(starttime) {
-        this.starttime = starttime;
-        return this;
-    }
 
-    setEndTime(endtime) {
-        this.endtime = endtime;
-        return this;
-    }
 
     setRequester(requester) {
         this.requester = `${requester}`;
@@ -86,17 +78,13 @@ class mewcard {
         if (!this.brightness) this.setBrightness(0);
         if (!this.thumbnail) this.setThumbnail('https://s6.imgcdn.dev/Opo4a.jpg');
         if (!this.progress) this.setProgress(0);
-        if (!this.starttime) this.setStartTime('0:00');
-        if (!this.endtime) this.setEndTime('0:00');
+
 
         let validatedProgress = parseFloat(this.progress);
         if (Number.isNaN(validatedProgress) || validatedProgress < 0 || validatedProgress > 100) throw new Error('Invalid progress parameter, must be between 0 to 100');
 
         if (validatedProgress < 2) validatedProgress = 2;
         if (validatedProgress > 99) validatedProgress = 99;
-
-        const validatedStartTime = this.starttime || '0:00';
-        const validatedEndTime = this.endtime || '0:00';
 
         const validatedColor = await colorFetch(
             this.color || 'ff0000',
@@ -130,7 +118,7 @@ class mewcard {
             progressBarCtx.lineTo(0, cornerRadius);
             progressBarCtx.arc(cornerRadius, cornerRadius, cornerRadius, Math.PI, 1.5 * Math.PI);
             progressBarCtx.closePath();
-            progressBarCtx.fillStyle = '#ababab';
+            progressBarCtx.fillStyle = '#4d4747';
             progressBarCtx.fill();
             progressBarCtx.beginPath();
             progressBarCtx.moveTo(cornerRadius, 0);
@@ -153,25 +141,49 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://i.postimg.cc/ht62GkhY/1.png",
-                "https://i.postimg.cc/fbSgjw6Z/2.png",
-                "https://i.postimg.cc/ZKjgJs8k/3.png",
-                "https://i.postimg.cc/wTczLkDF/4.png",
-                "https://i.postimg.cc/02qxz4Kb/5.png",
-                "https://i.postimg.cc/yx0Hfmt1/6.png",
-                "https://i.postimg.cc/rmBTCnhZ/7.png",
-                "https://i.postimg.cc/HxcHMDt7/8.png",
-                "https://i.postimg.cc/jdN59NPJ/9.png",
-                "https://i.postimg.cc/qqNr8fX3/10.png",
-                "https://i.postimg.cc/Hxsdk8r3/11.png",
-                "https://i.postimg.cc/GhZLxpfh/12.png",
-                "https://i.postimg.cc/59KNjgqz/13.png",
-                "https://i.postimg.cc/8ccptfDs/14.png",
-                "https://i.postimg.cc/ZRcnfhds/15.png",
-                "https://i.postimg.cc/qvPNqwrw/16.png",
-                "https://i.postimg.cc/WbfFLjfQ/17.png",
-                "https://i.postimg.cc/3NYpRBgV/18.png",
-                // Tambahkan lebih banyak URL gambar jika diperlukan
+                "https://cdn.is-a.fun/mewcard/themes2/1.png",
+                "https://cdn.is-a.fun/mewcard/themes2/2.png",
+                "https://cdn.is-a.fun/mewcard/themes2/3.png",
+                "https://cdn.is-a.fun/mewcard/themes2/4.png",
+                "https://cdn.is-a.fun/mewcard/themes2/5.png",
+                "https://cdn.is-a.fun/mewcard/themes2/6.png",
+                "https://cdn.is-a.fun/mewcard/themes2/7.png",
+                "https://cdn.is-a.fun/mewcard/themes2/8.png",
+                "https://cdn.is-a.fun/mewcard/themes2/9.png",
+                "https://cdn.is-a.fun/mewcard/themes2/10.png",
+                "https://cdn.is-a.fun/mewcard/themes2/11.png",
+                "https://cdn.is-a.fun/mewcard/themes2/12.png",
+                "https://cdn.is-a.fun/mewcard/themes2/13.png",
+                "https://cdn.is-a.fun/mewcard/themes2/14.png",
+                "https://cdn.is-a.fun/mewcard/themes2/15.png",
+                "https://cdn.is-a.fun/mewcard/themes2/16.png",
+                "https://cdn.is-a.fun/mewcard/themes2/17.png",
+                "https://cdn.is-a.fun/mewcard/themes2/18.png",
+                "https://cdn.is-a.fun/mewcard/themes1/1.png",
+                "https://cdn.is-a.fun/mewcard/themes1/2.png",
+                "https://cdn.is-a.fun/mewcard/themes1/3.png",
+                "https://cdn.is-a.fun/mewcard/themes1/4.png",
+                "https://cdn.is-a.fun/mewcard/themes1/5.png",
+                "https://cdn.is-a.fun/mewcard/themes1/6.png",
+                "https://cdn.is-a.fun/mewcard/themes1/7.png",
+                "https://cdn.is-a.fun/mewcard/themes1/8.png",
+                "https://cdn.is-a.fun/mewcard/themes1/9.png",
+                "https://cdn.is-a.fun/mewcard/themes1/10.png",
+                "https://cdn.is-a.fun/mewcard/themes1/11.png",
+                "https://cdn.is-a.fun/mewcard/themes1/12.png",
+                "https://cdn.is-a.fun/mewcard/themes1/13.png",
+                "https://cdn.is-a.fun/mewcard/themes1/14.png",
+                "https://cdn.is-a.fun/mewcard/themes1/15.png",
+                "https://cdn.is-a.fun/mewcard/themes1/16.png",
+                "https://cdn.is-a.fun/mewcard/themes1/17.png",
+                "https://cdn.is-a.fun/mewcard/themes1/18.png",
+                "https://cdn.is-a.fun/mewcard/themes1/19.png",
+                "https://cdn.is-a.fun/mewcard/themes1/20.png",
+                "https://cdn.is-a.fun/mewcard/themes1/21.png",
+                "https://cdn.is-a.fun/mewcard/themes1/22.png",
+                "https://cdn.is-a.fun/mewcard/themes1/23.png",
+                "https://cdn.is-a.fun/mewcard/themes1/24.png",
+                "https://cdn.is-a.fun/mewcard/themes1/25.png"
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -227,34 +239,29 @@ class mewcard {
                 return allowedColors[Math.floor(Math.random() * allowedColors.length)];
             }
 
-            // Mengatur warna teks secara acak dari array yang diizinkan
-            ctx.font = "bold 38px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+
+            // Mengatur ukuran font untuk "name"
+            ctx.font = "bold 40px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
             ctx.fillText(this.name, 250, 90);
 
-
+            // Mengatur ukuran font untuk "author"
             ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
-
-            // Warna untuk "author" (misalnya, merah)
             ctx.fillStyle = '#FF0000';
             ctx.fillText(this.author, 250, 120);
 
-            // Warna untuk "requester" (misalnya, biru)
+            // Tambahkan tanda hubung ( • ) di antara "author" dan "requester"
+            const dashWidth = ctx.measureText("  •  ").width; // Panjang teks dari tanda hubung
+            const authorWidth = ctx.measureText(this.author).width; // Panjang teks dari "author"
             ctx.fillStyle = getRandomColor();
-            ctx.fillText(this.requester, 250 + ctx.measureText(this.author).width + 10, 120);
+            ctx.fillText("  •  ", 250 + authorWidth, 120);
 
+            // Mengatur ukuran font untuk "requester"
+            ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillStyle = getRandomColor();
+            ctx.fillText(this.requester, 250 + authorWidth + dashWidth, 120);
 
-
-
-            ctx.fillStyle = '#000000';
-            ctx.font = '18px circular-std';
-            ctx.fillText(validatedStartTime, 270, 160);
-
-            ctx.fillStyle = '#000000';
-            ctx.font = '18px circular-std';
-            ctx.fillText(validatedEndTime, 550, 160);
-
-            ctx.drawImage(progressBarCanvas, 270, 140, 330, 5);
+            ctx.drawImage(progressBarCanvas, 270, 140, 330, 7);
             ctx.drawImage(circleCanvas, 10, 255, 1000, 1000);
 
             return frame.toBuffer("image/png");
