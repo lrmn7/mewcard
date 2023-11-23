@@ -130,7 +130,7 @@ class mewcard {
             progressBarCtx.lineTo(0, cornerRadius);
             progressBarCtx.arc(cornerRadius, cornerRadius, cornerRadius, Math.PI, 1.5 * Math.PI);
             progressBarCtx.closePath();
-            progressBarCtx.fillStyle = `#${validatedColor}`;
+            progressBarCtx.fillStyle = '#ffffff';
             progressBarCtx.fill();
 
             const circleCanvas = canvas.createCanvas(1000, 1000);
@@ -159,31 +159,6 @@ class mewcard {
                 "https://cdn.is-a.fun/mewcard/themes2/16.png",
                 "https://cdn.is-a.fun/mewcard/themes2/17.png",
                 "https://cdn.is-a.fun/mewcard/themes2/18.png",
-                "https://cdn.is-a.fun/mewcard/themes1/1.png",
-                "https://cdn.is-a.fun/mewcard/themes1/2.png",
-                "https://cdn.is-a.fun/mewcard/themes1/3.png",
-                "https://cdn.is-a.fun/mewcard/themes1/4.png",
-                "https://cdn.is-a.fun/mewcard/themes1/5.png",
-                "https://cdn.is-a.fun/mewcard/themes1/6.png",
-                "https://cdn.is-a.fun/mewcard/themes1/7.png",
-                "https://cdn.is-a.fun/mewcard/themes1/8.png",
-                "https://cdn.is-a.fun/mewcard/themes1/9.png",
-                "https://cdn.is-a.fun/mewcard/themes1/10.png",
-                "https://cdn.is-a.fun/mewcard/themes1/11.png",
-                "https://cdn.is-a.fun/mewcard/themes1/12.png",
-                "https://cdn.is-a.fun/mewcard/themes1/13.png",
-                "https://cdn.is-a.fun/mewcard/themes1/14.png",
-                "https://cdn.is-a.fun/mewcard/themes1/15.png",
-                "https://cdn.is-a.fun/mewcard/themes1/16.png",
-                "https://cdn.is-a.fun/mewcard/themes1/17.png",
-                "https://cdn.is-a.fun/mewcard/themes1/18.png",
-                "https://cdn.is-a.fun/mewcard/themes1/19.png",
-                "https://cdn.is-a.fun/mewcard/themes1/20.png",
-                "https://cdn.is-a.fun/mewcard/themes1/21.png",
-                "https://cdn.is-a.fun/mewcard/themes1/22.png",
-                "https://cdn.is-a.fun/mewcard/themes1/23.png",
-                "https://cdn.is-a.fun/mewcard/themes1/24.png",
-                "https://cdn.is-a.fun/mewcard/themes1/25.png"
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
