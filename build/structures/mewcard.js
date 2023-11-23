@@ -231,24 +231,24 @@ class mewcard {
             // Menggambar thumbnail
             ctx.drawImage(thumbnailCanvas, 50, 40, 180, 130);
 
-// Fungsi untuk menghasilkan warna acak dalam format RGB
-function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
-  
-  // Mendapatkan warna acak
-  const randomColor = getRandomColor();
-  
-  // Menambahkan border dengan warna acak
-  ctx.strokeStyle = randomColor; // Gunakan warna acak
-  ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
-  ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
-  
+            // Fungsi untuk menghasilkan warna acak dalam format RGB
+            function getRandomColor() {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            // Mendapatkan warna acak
+            const randomColor = getRandomColor();
+
+            // Menambahkan border thumbnail dengan warna acak
+            ctx.strokeStyle = randomColor; // Gunakan warna acak
+            ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
+            ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
+
 
 
             // Fungsi untuk menghasilkan warna heksadesimal acak
