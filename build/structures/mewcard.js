@@ -159,6 +159,38 @@ class mewcard {
                 "https://cdn.is-a.fun/mewcard/themes2/16.png",
                 "https://cdn.is-a.fun/mewcard/themes2/17.png",
                 "https://cdn.is-a.fun/mewcard/themes2/18.png",
+                "https://cdn.is-a.fun/mewcard/themes2/19.png",
+                "https://cdn.is-a.fun/mewcard/themes2/20.png",
+                "https://cdn.is-a.fun/mewcard/themes2/21.png",
+                "https://cdn.is-a.fun/mewcard/themes2/22.png",
+                "https://cdn.is-a.fun/mewcard/themes2/23.png",
+                "https://cdn.is-a.fun/mewcard/themes2/24.png",
+                "https://cdn.is-a.fun/mewcard/themes2/25.png",
+                "https://cdn.is-a.fun/mewcard/themes2/26.png",
+                "https://cdn.is-a.fun/mewcard/themes2/27.png",
+                "https://cdn.is-a.fun/mewcard/themes2/28.png",
+                "https://cdn.is-a.fun/mewcard/themes2/29.png",
+                "https://cdn.is-a.fun/mewcard/themes2/30.png",
+                "https://cdn.is-a.fun/mewcard/themes2/31.png",
+                "https://cdn.is-a.fun/mewcard/themes2/32.png",
+                "https://cdn.is-a.fun/mewcard/themes2/33.png",
+                "https://cdn.is-a.fun/mewcard/themes2/34.png",
+                "https://cdn.is-a.fun/mewcard/themes2/35.png",
+                "https://cdn.is-a.fun/mewcard/themes2/36.png",
+                "https://cdn.is-a.fun/mewcard/themes2/37.png",
+                "https://cdn.is-a.fun/mewcard/themes2/38.png",
+                "https://cdn.is-a.fun/mewcard/themes2/39.png",
+                "https://cdn.is-a.fun/mewcard/themes2/40.png",
+                "https://cdn.is-a.fun/mewcard/themes2/41.png",
+                "https://cdn.is-a.fun/mewcard/themes2/42.png",
+                "https://cdn.is-a.fun/mewcard/themes2/43.png",
+                "https://cdn.is-a.fun/mewcard/themes2/44.png",
+                "https://cdn.is-a.fun/mewcard/themes2/45.png",
+                "https://cdn.is-a.fun/mewcard/themes2/46.png",
+                "https://cdn.is-a.fun/mewcard/themes2/47.png",
+                "https://cdn.is-a.fun/mewcard/themes2/48.png",
+                "https://cdn.is-a.fun/mewcard/themes2/49.png",
+                "https://cdn.is-a.fun/mewcard/themes2/50.png"
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -199,10 +231,24 @@ class mewcard {
             // Menggambar thumbnail
             ctx.drawImage(thumbnailCanvas, 50, 40, 180, 130);
 
-            // Menambahkan border putih
-            ctx.strokeStyle = '#fff'; // Warna border putih
-            ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
-            ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
+// Fungsi untuk menghasilkan warna acak dalam format RGB
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+  // Mendapatkan warna acak
+  const randomColor = getRandomColor();
+  
+  // Menambahkan border dengan warna acak
+  ctx.strokeStyle = randomColor; // Gunakan warna acak
+  ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
+  ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
+  
 
 
             // Fungsi untuk menghasilkan warna heksadesimal acak
