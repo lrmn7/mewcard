@@ -6,7 +6,6 @@ export declare class mewcard {
     theme?: "classic";
     brightness?: number;
     thumbnail?: string;
-    progress?: number;
   });
 
   public setName(name: string): this;
@@ -15,7 +14,6 @@ export declare class mewcard {
   public setTheme(theme: "classic"): this;
   public setBrightness(brightness: number): this;
   public setThumbnail(thumbnail: string): this;
-  public setProgress(progress: number): this;
   public setRequester(requester: string): this;
 
   public build(): Promise<Buffer>;
