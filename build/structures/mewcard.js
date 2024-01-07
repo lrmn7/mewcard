@@ -232,6 +232,9 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
+                if (!this.thumbnail) {
+                    this.setThumbnail('https://cdn.is-a.fun/mewcard/themes2/1.png');
+                }
                 thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes2/1.png`); // Gunakan gambar default atau URL alternatif
             }
 
