@@ -14,15 +14,13 @@ This example code will generate a music card image and save it.
     const fs = require("fs");
 
     const card = new mewcard()
-        .setName("Biru Baru")
-        .setAuthor("Sejenak")
+        .setName("Ghea indrawari")
+        .setAuthor("Jiwa yang bersedih")
         .setColor("auto")
         .setTheme("classic")
         .setBrightness(50)
-        .setThumbnail("https://cdn.is-a.fun/mewwme/mewwme.png")
-        .setProgress(10)
-        .setStartTime("0:00")
-        .setEndTime("04:27")
+        .setThumbnail("https://cdn.discordapp.com/attachments/1194410866209206412/1196152611594838026/mewwme.png")
+        .setRequester("romanromannya")
 
     const cardBuffer = await card.build();
 
@@ -33,7 +31,7 @@ This example code will generate a music card image and save it.
 
 # __Output__
 This is the **classic** output of musicard.
-![classic](/example/mewcard.png)
+![classic](/example/mewwcard.png)
 
 # Originial Source
 
