@@ -218,9 +218,9 @@ class mewcard {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
                 if (!this.thumbnail) {
-                    this.setThumbnail('https://cdn.is-a.fun/mewcard/themes2/1.png');
+                    this.setThumbnail('https://cdn.is-a.fun/mewcard/themes7/35.png');
                 }
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes2/1.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes7/27.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -236,14 +236,14 @@ class mewcard {
             ctx.drawImage(thumbnailCanvas, 50, 40, 180, 130);
 
             // Menambahkan border putih
-            ctx.strokeStyle = '#fff'; // Warna border putih
+            ctx.strokeStyle = '#f2d7b7'; // Warna border putih
             ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
             ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
 
 
             // Fungsi untuk menghasilkan warna heksadesimal acak
             // Array warna yang diizinkan
-            const allowedColors = ['#000000', '#FF0000', '#FFFFFF', '#800080', '#000080', '#2F4F4F'];
+            const allowedColors = ['#f2d7b7', '#fbc5f9', '#00ff2a', '#ff00a8', '#00ffe4', '#ff6000'];
 
             // Fungsi untuk memilih warna secara acak dari array di atas
             function getRandomColor() {
