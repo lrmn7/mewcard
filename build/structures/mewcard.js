@@ -88,7 +88,7 @@ class mewcard {
         if (!this.color) this.setColor('ff0000');
         if (!this.theme) this.setTheme('mewwme');
         if (!this.brightness) this.setBrightness(0);
-        if (!this.thumbnail) this.setThumbnail('https://cdn.discordapp.com/attachments/1188939379968847903/1196914833778548857/dfas.png');
+        if (!this.thumbnail) this.setThumbnail('https://cdn.is-a.fun/mewcard/mewwme/thumbnail.png');
         if (!this.progress) this.setProgress(0);
         if (!this.starttime) this.setStartTime('0:00');
         if (!this.endtime) this.setEndTime('0:00');
