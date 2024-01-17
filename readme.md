@@ -5,7 +5,7 @@
 ```
 npm install mewcard
 yarn add mewcard
-pnpm mewcard
+pnpm install mewcard
 ```
 
 # __Example__
