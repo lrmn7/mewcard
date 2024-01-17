@@ -3,15 +3,16 @@ export declare class mewcard {
     name?: string;
     author?: string;
     color?: string;
-    theme?: "classic";
+    theme?: "mewwme" | "themes1" | "themes2" | "themes3" | "themes4" | "themes5" | "themes6" | "themes7" | "themes8" | "themes9" | "themes10" | "themes11" | "themes12" | "themes13" | "themes14";
     brightness?: number;
     thumbnail?: string;
+    requester?: string;
   });
 
   public setName(name: string): this;
   public setAuthor(author: string): this;
   public setColor(color: string): this;
-  public setTheme(theme: "classic"): this;
+  public setTheme(theme: string | "mewwme" | "themes1" | "themes2" | "themes3" | "themes4" | "themes5" | "themes6" | "themes7" | "themes8" | "themes9" | "themes10" | "themes11" | "themes12" | "themes13" | "themes14"): this;
   public setBrightness(brightness: number): this;
   public setThumbnail(thumbnail: string): this;
   public setRequester(requester: string): this;
