@@ -1858,7 +1858,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes15/1.png`);
+            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes17/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(500, 500);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
