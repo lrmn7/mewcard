@@ -39,11 +39,6 @@ This example code will generate a music card image and save it.
 ![classic](/example/14.png)
 ![classic](/example/15.png)
 
-# Originial Source
-
-```
-https://github.com/a3pire
-```
 # Projects
 |  Sr.  |            Name            |  Platform  |
 |:-----:|:--------------------------:|:----------:|
