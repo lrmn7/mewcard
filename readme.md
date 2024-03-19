@@ -48,6 +48,7 @@ This example code will generate a music card image and save it.
 
 # __Available Themes__
 - `themes1`, `themes2`, `themes3`, to `themes18`
+- `mewwme`, `mewwme1` (MewwME's theme, which is based on MewwME's profile picture.)
 
 # __Card Available__
 ![classic](/example/8.png)
