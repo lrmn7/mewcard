@@ -31,8 +31,8 @@ This example code will generate a music card image and save it.
 })()
 ```
 
-# __14 themes music card__
-- "mewwme" | "themes1" | "themes2" | "themes3" | "themes4" | "themes5" | "themes6" | "themes7" | "themes8" | "themes9" | "themes10" | "themes11" | "themes12" | "themes13" | "themes14" | "themes15" | "themes16"
+# __Available Themes__
+- `themes1`, `themes2`, `themes3`, to `themes18`
 
 # __Card Available__
 ![classic](/example/8.png)
