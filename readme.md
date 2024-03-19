@@ -1,5 +1,20 @@
-# __About__
-**Musicard** is a futuristic music card library designed for Discord bots.
+<br />
+<p align="center">
+  <a href="https://discord.gg/6EXgrmtkPX">
+    <img src="https://cdn.is-a.fun/bot/mewwme/mehelp.png" alt="Mewwme" >
+  </a>
+
+  <h1 align="center">M E W C A R D</h1>
+
+  <p align="center"> Mewcard is a futuristic music card library designed for Discord bots.
+    <br />
+    <br />
+    <a href="https://github.com/lrmn7/helpdesk/issues">Report Issues & Give Suggestions</a>
+    ·
+    <a href="https://discord.com/oauth2/authorize?client_id=928711702596423740&permissions=8&scope=bot+applications.commands">Invite</a>
+    ·
+    <a href="https://discord.gg/6EXgrmtkPX">Support Server</a>
+  </p>
 
 # __Installation__
 ```
@@ -42,4 +57,4 @@ This example code will generate a music card image and save it.
 # Projects
 |  Sr.  |            Name            |  Platform  |
 |:-----:|:--------------------------:|:----------:|
-| **1** | [Mewwme's Music](https://discord.com/api/oauth2/authorize?client_id=928711702596423740&permissions=2184571952&scope=bot%20applications.commands) | discord.js |
+| **1** | [Mewwme's Music](https://discord.com/oauth2/authorize?client_id=928711702596423740&permissions=8&scope=bot+applications.commands) | discord.js |
