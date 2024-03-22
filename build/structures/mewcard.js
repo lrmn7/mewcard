@@ -106,8 +106,8 @@ class mewcard {
         );
 
         if (this.name.replace(/\s/g, '').length > 15) this.name = `${this.name.slice(0, 15)}...`;
-        if (this.author.replace(/\s/g, '').length > 15) this.author = `${this.author.slice(0, 15)}...`;
-        if (this.requester.replace(/\s/g, '').length > 35) this.requester = `${this.requester.slice(0, 35)}...`;
+        if (this.author.replace(/\s/g, '').length > 15) this.author = `${this.author.slice(0, 15)}`;
+        if (this.requester.replace(/\s/g, '').length > 12) this.requester = `${this.requester.slice(0, 10)}...`;
 
         if (this.theme == 'mewwme') {
             const frame = canvas.createCanvas(800, 200);
@@ -2236,14 +2236,14 @@ class mewcard {
                 ctx.drawImage(thumbnailCanvas, 50, 40, 180, 130);
     
                 // Menambahkan border putih
-                ctx.strokeStyle = '#f2d7b7'; // Warna border putih
+                ctx.strokeStyle = '#ffffff'; // Warna border putih
                 ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
                 ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
     
     
                 // Fungsi untuk menghasilkan warna heksadesimal acak
                 // Array warna yang diizinkan
-                const allowedColors = ['#f2d7b7', '#fbc5f9', '#00ff2a', '#ff00a8', '#00ffe4', '#ff6000'];
+                const allowedColors = ['#ffffff'];
     
                 // Fungsi untuk memilih warna secara acak dari array di atas
                 function getRandomColor() {
@@ -2251,23 +2251,23 @@ class mewcard {
                 }
     
                 // Mengatur warna teks secara acak dari array yang diizinkan
-                ctx.font = "bold 38px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+                ctx.font = "bold 50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
                 ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
                 ctx.fillText(this.name, 250, 100);
     
                 // Teks "author" dengan warna dan ukuran font yang berbeda
                 const authorText = this.author;
                 ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
-                ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+                ctx.font = "bold 28px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
                 ctx.fillText(authorText, 250, 140);
     
                 // Mengukur lebar teks "author" untuk menentukan posisi teks "requester"
                 const authorTextWidth = ctx.measureText(authorText).width;
     
                 // Teks "requester" dengan warna dan ukuran font yang berbeda
-                const requesterText = this.requester;
+                const requesterText = `• ${this.requester}`;
                 ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
-                ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+                ctx.font = "bold 28px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
                 ctx.fillText(requesterText, 250 + authorTextWidth + 10, 140); // Mengatur posisi "requester" setelah "author"
     
                 return frame.toBuffer("image/png");
