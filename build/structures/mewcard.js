@@ -88,7 +88,7 @@ class mewcard {
         if (!this.color) this.setColor('ff0000');
         if (!this.theme) this.setTheme('mewwme');
         if (!this.brightness) this.setBrightness(0);
-        if (!this.thumbnail) this.setThumbnail('https://cdn.is-a.fun/mewcard/mewwme/thumbnail.png');
+        if (!this.thumbnail) this.setThumbnail('https://cdn.meww.me/mewcard/mewwme/thumbnail.png');
         if (!this.progress) this.setProgress(0);
         if (!this.starttime) this.setStartTime('0:00');
         if (!this.endtime) this.setEndTime('0:00');
@@ -121,41 +121,41 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.is-a.fun/mewcard/mewwme/1.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/2.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/3.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/4.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/5.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/6.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/7.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/8.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/9.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/10.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/11.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/12.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/13.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/14.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/15.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/16.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/17.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/18.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/19.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/20.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/21.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/22.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/23.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/24.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/25.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/26.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/27.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/28.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/29.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/30.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/31.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/32.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/33.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/34.png",
-                "https://cdn.is-a.fun/mewcard/mewwme/35.png",
+                "https://cdn.meww.me/mewcard/mewwme/1.png",
+                "https://cdn.meww.me/mewcard/mewwme/2.png",
+                "https://cdn.meww.me/mewcard/mewwme/3.png",
+                "https://cdn.meww.me/mewcard/mewwme/4.png",
+                "https://cdn.meww.me/mewcard/mewwme/5.png",
+                "https://cdn.meww.me/mewcard/mewwme/6.png",
+                "https://cdn.meww.me/mewcard/mewwme/7.png",
+                "https://cdn.meww.me/mewcard/mewwme/8.png",
+                "https://cdn.meww.me/mewcard/mewwme/9.png",
+                "https://cdn.meww.me/mewcard/mewwme/10.png",
+                "https://cdn.meww.me/mewcard/mewwme/11.png",
+                "https://cdn.meww.me/mewcard/mewwme/12.png",
+                "https://cdn.meww.me/mewcard/mewwme/13.png",
+                "https://cdn.meww.me/mewcard/mewwme/14.png",
+                "https://cdn.meww.me/mewcard/mewwme/15.png",
+                "https://cdn.meww.me/mewcard/mewwme/16.png",
+                "https://cdn.meww.me/mewcard/mewwme/17.png",
+                "https://cdn.meww.me/mewcard/mewwme/18.png",
+                "https://cdn.meww.me/mewcard/mewwme/19.png",
+                "https://cdn.meww.me/mewcard/mewwme/20.png",
+                "https://cdn.meww.me/mewcard/mewwme/21.png",
+                "https://cdn.meww.me/mewcard/mewwme/22.png",
+                "https://cdn.meww.me/mewcard/mewwme/23.png",
+                "https://cdn.meww.me/mewcard/mewwme/24.png",
+                "https://cdn.meww.me/mewcard/mewwme/25.png",
+                "https://cdn.meww.me/mewcard/mewwme/26.png",
+                "https://cdn.meww.me/mewcard/mewwme/27.png",
+                "https://cdn.meww.me/mewcard/mewwme/28.png",
+                "https://cdn.meww.me/mewcard/mewwme/29.png",
+                "https://cdn.meww.me/mewcard/mewwme/30.png",
+                "https://cdn.meww.me/mewcard/mewwme/31.png",
+                "https://cdn.meww.me/mewcard/mewwme/32.png",
+                "https://cdn.meww.me/mewcard/mewwme/33.png",
+                "https://cdn.meww.me/mewcard/mewwme/34.png",
+                "https://cdn.meww.me/mewcard/mewwme/35.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -185,7 +185,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -251,7 +251,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes1/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes1/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -271,7 +271,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes8/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes8/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -324,41 +324,41 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.is-a.fun/mewcard/themes2/1.png",
-                "https://cdn.is-a.fun/mewcard/themes2/2.png",
-                "https://cdn.is-a.fun/mewcard/themes2/3.png",
-                "https://cdn.is-a.fun/mewcard/themes2/4.png",
-                "https://cdn.is-a.fun/mewcard/themes2/5.png",
-                "https://cdn.is-a.fun/mewcard/themes2/6.png",
-                "https://cdn.is-a.fun/mewcard/themes2/7.png",
-                "https://cdn.is-a.fun/mewcard/themes2/8.png",
-                "https://cdn.is-a.fun/mewcard/themes2/9.png",
-                "https://cdn.is-a.fun/mewcard/themes2/10.png",
-                "https://cdn.is-a.fun/mewcard/themes2/11.png",
-                "https://cdn.is-a.fun/mewcard/themes2/12.png",
-                "https://cdn.is-a.fun/mewcard/themes2/13.png",
-                "https://cdn.is-a.fun/mewcard/themes2/14.png",
-                "https://cdn.is-a.fun/mewcard/themes2/15.png",
-                "https://cdn.is-a.fun/mewcard/themes2/16.png",
-                "https://cdn.is-a.fun/mewcard/themes2/17.png",
-                "https://cdn.is-a.fun/mewcard/themes2/18.png",
-                "https://cdn.is-a.fun/mewcard/themes2/19.png",
-                "https://cdn.is-a.fun/mewcard/themes2/20.png",
-                "https://cdn.is-a.fun/mewcard/themes2/21.png",
-                "https://cdn.is-a.fun/mewcard/themes2/22.png",
-                "https://cdn.is-a.fun/mewcard/themes2/23.png",
-                "https://cdn.is-a.fun/mewcard/themes2/24.png",
-                "https://cdn.is-a.fun/mewcard/themes2/25.png",
-                "https://cdn.is-a.fun/mewcard/themes2/26.png",
-                "https://cdn.is-a.fun/mewcard/themes2/27.png",
-                "https://cdn.is-a.fun/mewcard/themes2/28.png",
-                "https://cdn.is-a.fun/mewcard/themes2/29.png",
-                "https://cdn.is-a.fun/mewcard/themes2/30.png",
-                "https://cdn.is-a.fun/mewcard/themes2/31.png",
-                "https://cdn.is-a.fun/mewcard/themes2/32.png",
-                "https://cdn.is-a.fun/mewcard/themes2/33.png",
-                "https://cdn.is-a.fun/mewcard/themes2/34.png",
-                "https://cdn.is-a.fun/mewcard/themes2/35.png",
+                "https://cdn.meww.me/mewcard/themes2/1.png",
+                "https://cdn.meww.me/mewcard/themes2/2.png",
+                "https://cdn.meww.me/mewcard/themes2/3.png",
+                "https://cdn.meww.me/mewcard/themes2/4.png",
+                "https://cdn.meww.me/mewcard/themes2/5.png",
+                "https://cdn.meww.me/mewcard/themes2/6.png",
+                "https://cdn.meww.me/mewcard/themes2/7.png",
+                "https://cdn.meww.me/mewcard/themes2/8.png",
+                "https://cdn.meww.me/mewcard/themes2/9.png",
+                "https://cdn.meww.me/mewcard/themes2/10.png",
+                "https://cdn.meww.me/mewcard/themes2/11.png",
+                "https://cdn.meww.me/mewcard/themes2/12.png",
+                "https://cdn.meww.me/mewcard/themes2/13.png",
+                "https://cdn.meww.me/mewcard/themes2/14.png",
+                "https://cdn.meww.me/mewcard/themes2/15.png",
+                "https://cdn.meww.me/mewcard/themes2/16.png",
+                "https://cdn.meww.me/mewcard/themes2/17.png",
+                "https://cdn.meww.me/mewcard/themes2/18.png",
+                "https://cdn.meww.me/mewcard/themes2/19.png",
+                "https://cdn.meww.me/mewcard/themes2/20.png",
+                "https://cdn.meww.me/mewcard/themes2/21.png",
+                "https://cdn.meww.me/mewcard/themes2/22.png",
+                "https://cdn.meww.me/mewcard/themes2/23.png",
+                "https://cdn.meww.me/mewcard/themes2/24.png",
+                "https://cdn.meww.me/mewcard/themes2/25.png",
+                "https://cdn.meww.me/mewcard/themes2/26.png",
+                "https://cdn.meww.me/mewcard/themes2/27.png",
+                "https://cdn.meww.me/mewcard/themes2/28.png",
+                "https://cdn.meww.me/mewcard/themes2/29.png",
+                "https://cdn.meww.me/mewcard/themes2/30.png",
+                "https://cdn.meww.me/mewcard/themes2/31.png",
+                "https://cdn.meww.me/mewcard/themes2/32.png",
+                "https://cdn.meww.me/mewcard/themes2/33.png",
+                "https://cdn.meww.me/mewcard/themes2/34.png",
+                "https://cdn.meww.me/mewcard/themes2/35.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -388,7 +388,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -451,16 +451,16 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.is-a.fun/mewcard/themes3/1.png",
-                "https://cdn.is-a.fun/mewcard/themes3/2.png",
-                "https://cdn.is-a.fun/mewcard/themes3/4.png",
-                "https://cdn.is-a.fun/mewcard/themes3/5.png",
-                "https://cdn.is-a.fun/mewcard/themes3/3.png",
-                "https://cdn.is-a.fun/mewcard/themes3/6.png",
-                "https://cdn.is-a.fun/mewcard/themes3/7.png",
-                "https://cdn.is-a.fun/mewcard/themes3/8.png",
-                "https://cdn.is-a.fun/mewcard/themes3/9.png",
-                "https://cdn.is-a.fun/mewcard/themes3/10.png",
+                "https://cdn.meww.me/mewcard/themes3/1.png",
+                "https://cdn.meww.me/mewcard/themes3/2.png",
+                "https://cdn.meww.me/mewcard/themes3/4.png",
+                "https://cdn.meww.me/mewcard/themes3/5.png",
+                "https://cdn.meww.me/mewcard/themes3/3.png",
+                "https://cdn.meww.me/mewcard/themes3/6.png",
+                "https://cdn.meww.me/mewcard/themes3/7.png",
+                "https://cdn.meww.me/mewcard/themes3/8.png",
+                "https://cdn.meww.me/mewcard/themes3/9.png",
+                "https://cdn.meww.me/mewcard/themes3/10.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -490,7 +490,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -550,20 +550,20 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.is-a.fun/mewcard/themes4/1.png",
-                "https://cdn.is-a.fun/mewcard/themes4/2.png",
-                "https://cdn.is-a.fun/mewcard/themes4/4.png",
-                "https://cdn.is-a.fun/mewcard/themes4/5.png",
-                "https://cdn.is-a.fun/mewcard/themes4/3.png",
-                "https://cdn.is-a.fun/mewcard/themes4/6.png",
-                "https://cdn.is-a.fun/mewcard/themes4/7.png",
-                "https://cdn.is-a.fun/mewcard/themes4/8.png",
-                "https://cdn.is-a.fun/mewcard/themes4/9.png",
-                "https://cdn.is-a.fun/mewcard/themes4/10.png",
-                "https://cdn.is-a.fun/mewcard/themes4/11.png",
-                "https://cdn.is-a.fun/mewcard/themes4/12.png",
-                "https://cdn.is-a.fun/mewcard/themes4/13.png",
-                "https://cdn.is-a.fun/mewcard/themes4/14.png",
+                "https://cdn.meww.me/mewcard/themes4/1.png",
+                "https://cdn.meww.me/mewcard/themes4/2.png",
+                "https://cdn.meww.me/mewcard/themes4/4.png",
+                "https://cdn.meww.me/mewcard/themes4/5.png",
+                "https://cdn.meww.me/mewcard/themes4/3.png",
+                "https://cdn.meww.me/mewcard/themes4/6.png",
+                "https://cdn.meww.me/mewcard/themes4/7.png",
+                "https://cdn.meww.me/mewcard/themes4/8.png",
+                "https://cdn.meww.me/mewcard/themes4/9.png",
+                "https://cdn.meww.me/mewcard/themes4/10.png",
+                "https://cdn.meww.me/mewcard/themes4/11.png",
+                "https://cdn.meww.me/mewcard/themes4/12.png",
+                "https://cdn.meww.me/mewcard/themes4/13.png",
+                "https://cdn.meww.me/mewcard/themes4/14.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -593,7 +593,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes4/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes4/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -656,21 +656,21 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.is-a.fun/mewcard/themes5/1.png",
-                "https://cdn.is-a.fun/mewcard/themes5/2.png",
-                "https://cdn.is-a.fun/mewcard/themes5/4.png",
-                "https://cdn.is-a.fun/mewcard/themes5/5.png",
-                "https://cdn.is-a.fun/mewcard/themes5/3.png",
-                "https://cdn.is-a.fun/mewcard/themes5/6.png",
-                "https://cdn.is-a.fun/mewcard/themes5/7.png",
-                "https://cdn.is-a.fun/mewcard/themes5/8.png",
-                "https://cdn.is-a.fun/mewcard/themes5/9.png",
-                "https://cdn.is-a.fun/mewcard/themes5/10.png",
-                "https://cdn.is-a.fun/mewcard/themes5/11.png",
-                "https://cdn.is-a.fun/mewcard/themes5/12.png",
-                "https://cdn.is-a.fun/mewcard/themes5/13.png",
-                "https://cdn.is-a.fun/mewcard/themes5/14.png",
-                "https://cdn.is-a.fun/mewcard/themes5/15.png",
+                "https://cdn.meww.me/mewcard/themes5/1.png",
+                "https://cdn.meww.me/mewcard/themes5/2.png",
+                "https://cdn.meww.me/mewcard/themes5/4.png",
+                "https://cdn.meww.me/mewcard/themes5/5.png",
+                "https://cdn.meww.me/mewcard/themes5/3.png",
+                "https://cdn.meww.me/mewcard/themes5/6.png",
+                "https://cdn.meww.me/mewcard/themes5/7.png",
+                "https://cdn.meww.me/mewcard/themes5/8.png",
+                "https://cdn.meww.me/mewcard/themes5/9.png",
+                "https://cdn.meww.me/mewcard/themes5/10.png",
+                "https://cdn.meww.me/mewcard/themes5/11.png",
+                "https://cdn.meww.me/mewcard/themes5/12.png",
+                "https://cdn.meww.me/mewcard/themes5/13.png",
+                "https://cdn.meww.me/mewcard/themes5/14.png",
+                "https://cdn.meww.me/mewcard/themes5/15.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -700,7 +700,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes5/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes5/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -763,16 +763,16 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.is-a.fun/mewcard/themes6/1.png",
-                "https://cdn.is-a.fun/mewcard/themes6/2.png",
-                "https://cdn.is-a.fun/mewcard/themes6/4.png",
-                "https://cdn.is-a.fun/mewcard/themes6/3.png",
-                "https://cdn.is-a.fun/mewcard/themes6/5.png",
-                "https://cdn.is-a.fun/mewcard/themes6/6.png",
-                "https://cdn.is-a.fun/mewcard/themes6/7.png",
-                "https://cdn.is-a.fun/mewcard/themes6/8.png",
-                "https://cdn.is-a.fun/mewcard/themes6/9.png",
-                "https://cdn.is-a.fun/mewcard/themes6/10.png",
+                "https://cdn.meww.me/mewcard/themes6/1.png",
+                "https://cdn.meww.me/mewcard/themes6/2.png",
+                "https://cdn.meww.me/mewcard/themes6/4.png",
+                "https://cdn.meww.me/mewcard/themes6/3.png",
+                "https://cdn.meww.me/mewcard/themes6/5.png",
+                "https://cdn.meww.me/mewcard/themes6/6.png",
+                "https://cdn.meww.me/mewcard/themes6/7.png",
+                "https://cdn.meww.me/mewcard/themes6/8.png",
+                "https://cdn.meww.me/mewcard/themes6/9.png",
+                "https://cdn.meww.me/mewcard/themes6/10.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -802,7 +802,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes6/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes6/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -865,26 +865,26 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.is-a.fun/mewcard/themes7/1.png",
-                "https://cdn.is-a.fun/mewcard/themes7/2.png",
-                "https://cdn.is-a.fun/mewcard/themes7/4.png",
-                "https://cdn.is-a.fun/mewcard/themes7/3.png",
-                "https://cdn.is-a.fun/mewcard/themes7/5.png",
-                "https://cdn.is-a.fun/mewcard/themes7/6.png",
-                "https://cdn.is-a.fun/mewcard/themes7/7.png",
-                "https://cdn.is-a.fun/mewcard/themes7/9.png",
-                "https://cdn.is-a.fun/mewcard/themes7/8.png",
-                "https://cdn.is-a.fun/mewcard/themes7/10.png",
-                "https://cdn.is-a.fun/mewcard/themes7/11.png",
-                "https://cdn.is-a.fun/mewcard/themes7/12.png",
-                "https://cdn.is-a.fun/mewcard/themes7/13.png",
-                "https://cdn.is-a.fun/mewcard/themes7/14.png",
-                "https://cdn.is-a.fun/mewcard/themes7/15.png",
-                "https://cdn.is-a.fun/mewcard/themes7/16.png",
-                "https://cdn.is-a.fun/mewcard/themes7/17.png",
-                "https://cdn.is-a.fun/mewcard/themes7/18.png",
-                "https://cdn.is-a.fun/mewcard/themes7/19.png",
-                "https://cdn.is-a.fun/mewcard/themes7/20.png",
+                "https://cdn.meww.me/mewcard/themes7/1.png",
+                "https://cdn.meww.me/mewcard/themes7/2.png",
+                "https://cdn.meww.me/mewcard/themes7/4.png",
+                "https://cdn.meww.me/mewcard/themes7/3.png",
+                "https://cdn.meww.me/mewcard/themes7/5.png",
+                "https://cdn.meww.me/mewcard/themes7/6.png",
+                "https://cdn.meww.me/mewcard/themes7/7.png",
+                "https://cdn.meww.me/mewcard/themes7/9.png",
+                "https://cdn.meww.me/mewcard/themes7/8.png",
+                "https://cdn.meww.me/mewcard/themes7/10.png",
+                "https://cdn.meww.me/mewcard/themes7/11.png",
+                "https://cdn.meww.me/mewcard/themes7/12.png",
+                "https://cdn.meww.me/mewcard/themes7/13.png",
+                "https://cdn.meww.me/mewcard/themes7/14.png",
+                "https://cdn.meww.me/mewcard/themes7/15.png",
+                "https://cdn.meww.me/mewcard/themes7/16.png",
+                "https://cdn.meww.me/mewcard/themes7/17.png",
+                "https://cdn.meww.me/mewcard/themes7/18.png",
+                "https://cdn.meww.me/mewcard/themes7/19.png",
+                "https://cdn.meww.me/mewcard/themes7/20.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -914,7 +914,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes7/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes7/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -980,7 +980,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes8/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes8/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -999,7 +999,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes8/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes8/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
             
 
@@ -1056,7 +1056,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes9/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes9/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1076,7 +1076,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes9/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes9/no.png`); // Gunakan gambar default atau URL alternatif
             }
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -1133,7 +1133,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes10/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes10/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1153,7 +1153,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes10/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes10/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1213,7 +1213,7 @@ class mewcard {
             const frame = canvas.createCanvas(3264, 765);
             const ctx = frame.getContext("2d");
 
-            const background = await canvas.loadImage("https://cdn.is-a.fun/mewcard/themes11/1.png");
+            const background = await canvas.loadImage("https://cdn.meww.me/mewcard/themes11/1.png");
             ctx.drawImage(background, 0, 0, frame.width, frame.height);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
@@ -1233,7 +1233,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes11/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes11/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1291,7 +1291,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes12/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes12/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1311,7 +1311,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes12/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes12/no.png`); // Gunakan gambar default atau URL alternatif
             }
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -1367,7 +1367,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes13/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes13/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1387,7 +1387,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes13/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes13/no.png`); // Gunakan gambar default atau URL alternatif
             }
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -1474,7 +1474,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes14/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1492,7 +1492,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1512,7 +1512,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.is-a.fun/mewcard/themes14/2.png")
+            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes14/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 450);
@@ -1602,7 +1602,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes15/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes15/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(500, 500);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1620,7 +1620,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1640,7 +1640,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.is-a.fun/mewcard/themes14/2.png")
+            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes14/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 350);
@@ -1730,7 +1730,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes16/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes16/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(500, 500);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1748,7 +1748,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes16/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes16/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1768,7 +1768,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.is-a.fun/mewcard/themes16/2.png")
+            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes16/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 350);
@@ -1858,7 +1858,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes17/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes17/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(500, 500);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1876,7 +1876,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1896,7 +1896,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.is-a.fun/mewcard/themes14/2.png")
+            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes14/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 350);
@@ -1986,7 +1986,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes18/1.png`);
+            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes18/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(500, 500);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -2004,7 +2004,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2024,7 +2024,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.is-a.fun/mewcard/themes14/2.png")
+            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes14/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 350);
@@ -2082,21 +2082,21 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.is-a.fun/mewcard/mewwme1/1.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/2.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/3.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/4.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/5.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/6.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/7.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/8.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/9.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/10.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/11.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/12.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/13.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/14.png",
-                "https://cdn.is-a.fun/mewcard/mewwme1/15.png",
+                "https://cdn.meww.me/mewcard/mewwme1/1.png",
+                "https://cdn.meww.me/mewcard/mewwme1/2.png",
+                "https://cdn.meww.me/mewcard/mewwme1/3.png",
+                "https://cdn.meww.me/mewcard/mewwme1/4.png",
+                "https://cdn.meww.me/mewcard/mewwme1/5.png",
+                "https://cdn.meww.me/mewcard/mewwme1/6.png",
+                "https://cdn.meww.me/mewcard/mewwme1/7.png",
+                "https://cdn.meww.me/mewcard/mewwme1/8.png",
+                "https://cdn.meww.me/mewcard/mewwme1/9.png",
+                "https://cdn.meww.me/mewcard/mewwme1/10.png",
+                "https://cdn.meww.me/mewcard/mewwme1/11.png",
+                "https://cdn.meww.me/mewcard/mewwme1/12.png",
+                "https://cdn.meww.me/mewcard/mewwme1/13.png",
+                "https://cdn.meww.me/mewcard/mewwme1/14.png",
+                "https://cdn.meww.me/mewcard/mewwme1/15.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -2126,7 +2126,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2190,7 +2190,7 @@ class mewcard {
     
                 // Daftar URL gambar yang dapat dipilih secara acak
                 const imageUrls = [
-                    "https://cdn.is-a.fun/mewcard/themes19/1.png",
+                    "https://cdn.meww.me/mewcard/themes19/1.png",
                 ];
     
                 // Fungsi untuk memilih URL gambar secara acak
@@ -2220,7 +2220,7 @@ class mewcard {
                 } catch (error) {
                     // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                     console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                    thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/themes19/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                    thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes19/thumbnail.png`); // Gunakan gambar default atau URL alternatif
                 }
     
                 const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2450,7 +2450,7 @@ class mewcard {
         
                     // Daftar URL gambar yang dapat dipilih secara acak
                     const imageUrls = [
-                        "https://cdn.is-a.fun/mewcard/blank.png",
+                        "https://cdn.meww.me/mewcard/blank.png",
                     ];
         
                     // Fungsi untuk memilih URL gambar secara acak
@@ -2480,7 +2480,7 @@ class mewcard {
                     } catch (error) {
                         // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                         console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                        thumbnailImage = await canvas.loadImage(`https://cdn.is-a.fun/mewcard/thumbnail-blank.png`); // Gunakan gambar default atau URL alternatif
+                        thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/thumbnail-blank.png`); // Gunakan gambar default atau URL alternatif
                     }
         
                     const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
