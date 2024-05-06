@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://discord.gg/6EXgrmtkPX">
-    <img src="https://cdn.is-a.fun/bot/mewwme/mehelp.png" alt="Mewwme" >
+    <img src="https://cdn.meww.me/bot/mewwme/mehelp.png" alt="Mewwme" >
   </a>
 
   <h1 align="center">M E W C A R D</h1>
