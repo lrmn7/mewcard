@@ -216,14 +216,14 @@ class mewcard {
             }
 
             // Mengatur warna teks secara acak dari array yang diizinkan
-            ctx.font = "bold 38px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.font = "bold 40px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
             ctx.fillText(this.name, 250, 100);
 
             // Teks "author" dengan warna dan ukuran font yang berbeda
             const authorText = this.author;
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
-            ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
             ctx.fillText(authorText, 250, 140);
 
             // Mengukur lebar teks "author" untuk menentukan posisi teks "requester"
@@ -232,7 +232,7 @@ class mewcard {
             // Teks "requester" dengan warna dan ukuran font yang berbeda
             const requesterText = this.requester;
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
-            ctx.font = "bold 22px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
             ctx.fillText(requesterText, 250 + authorTextWidth + 10, 140); // Mengatur posisi "requester" setelah "author"
 
             return frame.toBuffer("image/png");
