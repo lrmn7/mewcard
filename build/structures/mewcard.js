@@ -121,41 +121,7 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/mewwme/1.png",
-                "https://cdn.meww.me/mewcard/mewwme/2.png",
-                "https://cdn.meww.me/mewcard/mewwme/3.png",
-                "https://cdn.meww.me/mewcard/mewwme/4.png",
-                "https://cdn.meww.me/mewcard/mewwme/5.png",
-                "https://cdn.meww.me/mewcard/mewwme/6.png",
-                "https://cdn.meww.me/mewcard/mewwme/7.png",
-                "https://cdn.meww.me/mewcard/mewwme/8.png",
-                "https://cdn.meww.me/mewcard/mewwme/9.png",
-                "https://cdn.meww.me/mewcard/mewwme/10.png",
-                "https://cdn.meww.me/mewcard/mewwme/11.png",
-                "https://cdn.meww.me/mewcard/mewwme/12.png",
-                "https://cdn.meww.me/mewcard/mewwme/13.png",
-                "https://cdn.meww.me/mewcard/mewwme/14.png",
-                "https://cdn.meww.me/mewcard/mewwme/15.png",
-                "https://cdn.meww.me/mewcard/mewwme/16.png",
-                "https://cdn.meww.me/mewcard/mewwme/17.png",
-                "https://cdn.meww.me/mewcard/mewwme/18.png",
-                "https://cdn.meww.me/mewcard/mewwme/19.png",
-                "https://cdn.meww.me/mewcard/mewwme/20.png",
-                "https://cdn.meww.me/mewcard/mewwme/21.png",
-                "https://cdn.meww.me/mewcard/mewwme/22.png",
-                "https://cdn.meww.me/mewcard/mewwme/23.png",
-                "https://cdn.meww.me/mewcard/mewwme/24.png",
-                "https://cdn.meww.me/mewcard/mewwme/25.png",
-                "https://cdn.meww.me/mewcard/mewwme/26.png",
-                "https://cdn.meww.me/mewcard/mewwme/27.png",
-                "https://cdn.meww.me/mewcard/mewwme/28.png",
-                "https://cdn.meww.me/mewcard/mewwme/29.png",
-                "https://cdn.meww.me/mewcard/mewwme/30.png",
-                "https://cdn.meww.me/mewcard/mewwme/31.png",
-                "https://cdn.meww.me/mewcard/mewwme/32.png",
-                "https://cdn.meww.me/mewcard/mewwme/33.png",
-                "https://cdn.meww.me/mewcard/mewwme/34.png",
-                "https://cdn.meww.me/mewcard/mewwme/35.png",
+                "https://cdn.meww.me/assets/mews-card1.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -208,7 +174,7 @@ class mewcard {
 
             // Fungsi untuk menghasilkan warna heksadesimal acak
             // Array warna yang diizinkan
-            const allowedColors = ['#f2d7b7', '#fbc5f9', '#00ff2a', '#ff00a8', '#00ffe4', '#ff6000'];
+            const allowedColors = ['#77797c', '#0641c7', '#967e58', '#628fa4', '#d34d52', '#f00c8f'];
 
             // Fungsi untuk memilih warna secara acak dari array di atas
             function getRandomColor() {
@@ -216,15 +182,15 @@ class mewcard {
             }
 
             // Mengatur warna teks secara acak dari array yang diizinkan
-            ctx.font = "bold 40px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.font = "bold 50px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
-            ctx.fillText(this.name, 250, 100);
+            ctx.fillText(this.name, 250, 103);
 
             // Teks "author" dengan warna dan ukuran font yang berbeda
             const authorText = this.author;
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
-            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
-            ctx.fillText(authorText, 250, 140);
+            ctx.font = "bold 34px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillText(authorText, 250, 143);
 
             // Mengukur lebar teks "author" untuk menentukan posisi teks "requester"
             const authorTextWidth = ctx.measureText(authorText).width;
@@ -232,10 +198,137 @@ class mewcard {
             // Teks "requester" dengan warna dan ukuran font yang berbeda
             const requesterText = this.requester;
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
-            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
-            ctx.fillText(requesterText, 250 + authorTextWidth + 10, 140); // Mengatur posisi "requester" setelah "author"
+            ctx.font = "bold 34px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillText(requesterText, 250 + authorTextWidth + 10, 143); // Mengatur posisi "requester" setelah "author"
 
             return frame.toBuffer("image/png");
+        } else if (this.theme == 'yui') {
+                const frame = canvas.createCanvas(800, 200);
+                const ctx = frame.getContext("2d");
+    
+                const circleCanvas = canvas.createCanvas(1000, 1000);
+                const circleCtx = circleCanvas.getContext('2d');
+    
+                const circleRadius = 20;
+                const circleY = 97;
+    
+                // Daftar URL gambar yang dapat dipilih secara acak
+                const imageUrls = [
+                    "https://cdn.meww.me/mewcard/mewwme/1.png",
+                    "https://cdn.meww.me/mewcard/mewwme/2.png",
+                    "https://cdn.meww.me/mewcard/mewwme/3.png",
+                    "https://cdn.meww.me/mewcard/mewwme/4.png",
+                    "https://cdn.meww.me/mewcard/mewwme/5.png",
+                    "https://cdn.meww.me/mewcard/mewwme/6.png",
+                    "https://cdn.meww.me/mewcard/mewwme/7.png",
+                    "https://cdn.meww.me/mewcard/mewwme/8.png",
+                    "https://cdn.meww.me/mewcard/mewwme/9.png",
+                    "https://cdn.meww.me/mewcard/mewwme/10.png",
+                    "https://cdn.meww.me/mewcard/mewwme/11.png",
+                    "https://cdn.meww.me/mewcard/mewwme/12.png",
+                    "https://cdn.meww.me/mewcard/mewwme/13.png",
+                    "https://cdn.meww.me/mewcard/mewwme/14.png",
+                    "https://cdn.meww.me/mewcard/mewwme/15.png",
+                    "https://cdn.meww.me/mewcard/mewwme/16.png",
+                    "https://cdn.meww.me/mewcard/mewwme/17.png",
+                    "https://cdn.meww.me/mewcard/mewwme/18.png",
+                    "https://cdn.meww.me/mewcard/mewwme/19.png",
+                    "https://cdn.meww.me/mewcard/mewwme/20.png",
+                    "https://cdn.meww.me/mewcard/mewwme/21.png",
+                    "https://cdn.meww.me/mewcard/mewwme/22.png",
+                    "https://cdn.meww.me/mewcard/mewwme/23.png",
+                    "https://cdn.meww.me/mewcard/mewwme/24.png",
+                    "https://cdn.meww.me/mewcard/mewwme/25.png",
+                    "https://cdn.meww.me/mewcard/mewwme/26.png",
+                    "https://cdn.meww.me/mewcard/mewwme/27.png",
+                    "https://cdn.meww.me/mewcard/mewwme/28.png",
+                    "https://cdn.meww.me/mewcard/mewwme/29.png",
+                    "https://cdn.meww.me/mewcard/mewwme/30.png",
+                    "https://cdn.meww.me/mewcard/mewwme/31.png",
+                    "https://cdn.meww.me/mewcard/mewwme/32.png",
+                    "https://cdn.meww.me/mewcard/mewwme/33.png",
+                    "https://cdn.meww.me/mewcard/mewwme/34.png",
+                    "https://cdn.meww.me/mewcard/mewwme/35.png",
+                ];
+    
+                // Fungsi untuk memilih URL gambar secara acak
+                function getRandomImageUrl() {
+                    const randomIndex = Math.floor(Math.random() * imageUrls.length);
+                    return imageUrls[randomIndex];
+                }
+    
+                // Mengambil gambar secara acak
+                const backgroundUrl = getRandomImageUrl();
+                const background = await canvas.loadImage(backgroundUrl);
+                ctx.drawImage(background, 0, 0, frame.width, frame.height);
+    
+                const thumbnailCanvas = canvas.createCanvas(800, 200); // Mengubah lebar kanvas
+                const thumbnailCtx = thumbnailCanvas.getContext('2d');
+    
+                let thumbnailImage;
+    
+                try {
+                    thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                        requestOptions: {
+                            headers: {
+                                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                            }
+                        }
+                    });
+                } catch (error) {
+                    // Mengatasi kesalahan ketika gambar tidak dapat dimuat
+                    console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
+                    thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                }
+    
+                const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
+                const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
+                const thumbnailY = (thumbnailImage.height - thumbnailSize) / 2;
+    
+    
+    
+                thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
+    
+    
+                // Menggambar thumbnail
+                ctx.drawImage(thumbnailCanvas, 50, 40, 180, 130);
+    
+                // Menambahkan border putih
+                ctx.strokeStyle = '#f2d7b7'; // Warna border putih
+                ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
+                ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
+    
+    
+                // Fungsi untuk menghasilkan warna heksadesimal acak
+                // Array warna yang diizinkan
+                const allowedColors = ['#f2d7b7', '#fbc5f9', '#00ff2a', '#ff00a8', '#00ffe4', '#ff6000'];
+    
+                // Fungsi untuk memilih warna secara acak dari array di atas
+                function getRandomColor() {
+                    return allowedColors[Math.floor(Math.random() * allowedColors.length)];
+                }
+    
+                // Mengatur warna teks secara acak dari array yang diizinkan
+                ctx.font = "bold 40px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+                ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+                ctx.fillText(this.name, 250, 100);
+    
+                // Teks "author" dengan warna dan ukuran font yang berbeda
+                const authorText = this.author;
+                ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+                ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+                ctx.fillText(authorText, 250, 140);
+    
+                // Mengukur lebar teks "author" untuk menentukan posisi teks "requester"
+                const authorTextWidth = ctx.measureText(authorText).width;
+    
+                // Teks "requester" dengan warna dan ukuran font yang berbeda
+                const requesterText = this.requester;
+                ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+                ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+                ctx.fillText(requesterText, 250 + authorTextWidth + 10, 140); // Mengatur posisi "requester" setelah "author"
+    
+                return frame.toBuffer("image/png");
         } else if (this.theme == 'themes1') {
             const progressBarWidth = (validatedProgress / 100) * 670;
             const circleX = progressBarWidth + 60;
