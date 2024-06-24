@@ -88,7 +88,7 @@ class mewcard {
         if (!this.color) this.setColor('ff0000');
         if (!this.theme) this.setTheme('mewwme');
         if (!this.brightness) this.setBrightness(0);
-        if (!this.thumbnail) this.setThumbnail('https://cdn.meww.me/mewcard/mewwme/thumbnail.png');
+        if (!this.thumbnail) this.setThumbnail('https://cdn.meww.me/assets/thumbnail.png');
         if (!this.progress) this.setProgress(0);
         if (!this.starttime) this.setStartTime('0:00');
         if (!this.endtime) this.setEndTime('0:00');
@@ -151,7 +151,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -200,6 +200,306 @@ class mewcard {
             ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
             ctx.font = "bold 34px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
             ctx.fillText(requesterText, 250 + authorTextWidth + 10, 143); // Mengatur posisi "requester" setelah "author"
+
+            return frame.toBuffer("image/png");
+        } else if (this.theme == 'kobokanaeru') {
+            const frame = canvas.createCanvas(800, 200);
+            const ctx = frame.getContext("2d");
+
+            const circleCanvas = canvas.createCanvas(1000, 1000);
+            const circleCtx = circleCanvas.getContext('2d');
+
+            const circleRadius = 20;
+            const circleY = 97;
+            const imageUrls = [
+                "https://cdn.meww.me/mewcard/KoboKanaeru/1.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/2.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/3.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/4.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/5.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/6.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/7.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/8.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/9.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/10.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/11.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/12.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/13.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/14.png",
+                "https://cdn.meww.me/mewcard/KoboKanaeru/15.png",
+            ];
+            function getRandomImageUrl() {
+                const randomIndex = Math.floor(Math.random() * imageUrls.length);
+                return imageUrls[randomIndex];
+            }
+
+            // Mengambil gambar secara acak
+            const backgroundUrl = getRandomImageUrl();
+            const background = await canvas.loadImage(backgroundUrl);
+            ctx.drawImage(background, 0, 0, frame.width, frame.height);
+
+            const thumbnailCanvas = canvas.createCanvas(800, 200); // Mengubah lebar kanvas
+            const thumbnailCtx = thumbnailCanvas.getContext('2d');
+
+            let thumbnailImage;
+
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
+                    }
+                });
+            } catch (error) {
+                // Mengatasi kesalahan ketika gambar tidak dapat dimuat
+                console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/KoboKanaeru/kobokanaeru.png`); // Gunakan gambar default atau URL alternatif
+            }
+
+            const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
+            const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
+            const thumbnailY = (thumbnailImage.height - thumbnailSize) / 2;
+
+
+
+            thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
+
+
+            // Menggambar thumbnail
+            ctx.drawImage(thumbnailCanvas, 50, 40, 180, 130);
+
+            // Menambahkan border putih
+            ctx.strokeStyle = '#79b8d5'; // Warna border putih
+            ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
+            ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
+
+
+            // Fungsi untuk menghasilkan warna heksadesimal acak
+            // Array warna yang diizinkan
+            const allowedColors = ['#79b8d5', '#90979a', '#f89f96', '#d0cfcd', '#fcd0d1', '#fefefe'];
+
+            // Fungsi untuk memilih warna secara acak dari array di atas
+            function getRandomColor() {
+                return allowedColors[Math.floor(Math.random() * allowedColors.length)];
+            }
+
+            // Mengatur warna teks secara acak dari array yang diizinkan
+            ctx.font = "bold 40px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+            ctx.fillText(this.name, 250, 100);
+
+            // Teks "author" dengan warna dan ukuran font yang berbeda
+            const authorText = this.author;
+            ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillText(authorText, 250, 140);
+
+            // Mengukur lebar teks "author" untuk menentukan posisi teks "requester"
+            const authorTextWidth = ctx.measureText(authorText).width;
+
+            // Teks "requester" dengan warna dan ukuran font yang berbeda
+            const requesterText = this.requester;
+            ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillText(requesterText, 250 + authorTextWidth + 10, 140); // Mengatur posisi "requester" setelah "author"
+
+            return frame.toBuffer("image/png");
+        } else if (this.theme == 'vestiazeta') {
+            const frame = canvas.createCanvas(800, 200);
+            const ctx = frame.getContext("2d");
+
+            const circleCanvas = canvas.createCanvas(1000, 1000);
+            const circleCtx = circleCanvas.getContext('2d');
+
+            const circleRadius = 20;
+            const circleY = 97;
+            const imageUrls = [
+                "https://cdn.meww.me/mewcard/VestiaZeta/1.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/2.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/3.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/4.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/5.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/6.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/7.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/8.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/9.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/10.png",
+                "https://cdn.meww.me/mewcard/VestiaZeta/11.png",
+            ];
+            function getRandomImageUrl() {
+                const randomIndex = Math.floor(Math.random() * imageUrls.length);
+                return imageUrls[randomIndex];
+            }
+
+            // Mengambil gambar secara acak
+            const backgroundUrl = getRandomImageUrl();
+            const background = await canvas.loadImage(backgroundUrl);
+            ctx.drawImage(background, 0, 0, frame.width, frame.height);
+
+            const thumbnailCanvas = canvas.createCanvas(800, 200); // Mengubah lebar kanvas
+            const thumbnailCtx = thumbnailCanvas.getContext('2d');
+
+            let thumbnailImage;
+
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
+                    }
+                });
+            } catch (error) {
+                // Mengatasi kesalahan ketika gambar tidak dapat dimuat
+                console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/VestiaZeta/vestiazeta.png`); // Gunakan gambar default atau URL alternatif
+            }
+
+            const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
+            const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
+            const thumbnailY = (thumbnailImage.height - thumbnailSize) / 2;
+
+
+
+            thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
+
+
+            // Menggambar thumbnail
+            ctx.drawImage(thumbnailCanvas, 50, 40, 180, 130);
+
+            // Menambahkan border putih
+            ctx.strokeStyle = '#f2d7b7'; // Warna border putih
+            ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
+            ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
+
+
+            // Fungsi untuk menghasilkan warna heksadesimal acak
+            // Array warna yang diizinkan
+            const allowedColors = ['#b6b5ba', '#b2a085', '#747fa6', '#fef7f1', '#d6d5dd', '#b0c8ea'];
+
+            // Fungsi untuk memilih warna secara acak dari array di atas
+            function getRandomColor() {
+                return allowedColors[Math.floor(Math.random() * allowedColors.length)];
+            }
+
+            // Mengatur warna teks secara acak dari array yang diizinkan
+            ctx.font = "bold 40px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+            ctx.fillText(this.name, 250, 100);
+
+            // Teks "author" dengan warna dan ukuran font yang berbeda
+            const authorText = this.author;
+            ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillText(authorText, 250, 140);
+
+            // Mengukur lebar teks "author" untuk menentukan posisi teks "requester"
+            const authorTextWidth = ctx.measureText(authorText).width;
+
+            // Teks "requester" dengan warna dan ukuran font yang berbeda
+            const requesterText = this.requester;
+            ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillText(requesterText, 250 + authorTextWidth + 10, 140); // Mengatur posisi "requester" setelah "author"
+
+            return frame.toBuffer("image/png");
+        } else if (this.theme == 'cute') {
+            const frame = canvas.createCanvas(800, 200);
+            const ctx = frame.getContext("2d");
+
+            const circleCanvas = canvas.createCanvas(1000, 1000);
+            const circleCtx = circleCanvas.getContext('2d');
+
+            const circleRadius = 20;
+            const circleY = 97;
+            const imageUrls = [
+                "https://cdn.meww.me/mewcard/Cute/1.png",
+                "https://cdn.meww.me/mewcard/Cute/2.png",
+                "https://cdn.meww.me/mewcard/Cute/3.png",
+                "https://cdn.meww.me/mewcard/Cute/4.png",
+                "https://cdn.meww.me/mewcard/Cute/5.png",
+                "https://cdn.meww.me/mewcard/Cute/6.png",
+                "https://cdn.meww.me/mewcard/Cute/7.png",
+                "https://cdn.meww.me/mewcard/Cute/8.png",
+                "https://cdn.meww.me/mewcard/Cute/9.png",
+                "https://cdn.meww.me/mewcard/Cute/10.png",
+            ];
+            function getRandomImageUrl() {
+                const randomIndex = Math.floor(Math.random() * imageUrls.length);
+                return imageUrls[randomIndex];
+            }
+
+            // Mengambil gambar secara acak
+            const backgroundUrl = getRandomImageUrl();
+            const background = await canvas.loadImage(backgroundUrl);
+            ctx.drawImage(background, 0, 0, frame.width, frame.height);
+
+            const thumbnailCanvas = canvas.createCanvas(800, 200); // Mengubah lebar kanvas
+            const thumbnailCtx = thumbnailCanvas.getContext('2d');
+
+            let thumbnailImage;
+
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
+                    }
+                });
+            } catch (error) {
+                // Mengatasi kesalahan ketika gambar tidak dapat dimuat
+                console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/VestiaZeta/vestiazeta.png`); // Gunakan gambar default atau URL alternatif
+            }
+
+            const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
+            const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
+            const thumbnailY = (thumbnailImage.height - thumbnailSize) / 2;
+
+
+
+            thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
+
+
+            // Menggambar thumbnail
+            ctx.drawImage(thumbnailCanvas, 50, 40, 180, 130);
+
+            // Menambahkan border putih
+            ctx.strokeStyle = '#f4e0c7'; // Warna border putih
+            ctx.lineWidth = 5; // Lebar border (sesuaikan dengan preferensi Anda)
+            ctx.strokeRect(50, 40, 180, 130); // Koordinat dan ukuran border
+
+
+            // Fungsi untuk menghasilkan warna heksadesimal acak
+            // Array warna yang diizinkan
+            const allowedColors = ['#96dcfc', '#b6b5ba', '#f4e0c7', '#e2b379', '#f9cfc2', '#ff4158'];
+
+            // Fungsi untuk memilih warna secara acak dari array di atas
+            function getRandomColor() {
+                return allowedColors[Math.floor(Math.random() * allowedColors.length)];
+            }
+
+            // Mengatur warna teks secara acak dari array yang diizinkan
+            ctx.font = "bold 40px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+            ctx.fillText(this.name, 250, 100);
+
+            // Teks "author" dengan warna dan ukuran font yang berbeda
+            const authorText = this.author;
+            ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillText(authorText, 250, 140);
+
+            // Mengukur lebar teks "author" untuk menentukan posisi teks "requester"
+            const authorTextWidth = ctx.measureText(authorText).width;
+
+            // Teks "requester" dengan warna dan ukuran font yang berbeda
+            const requesterText = this.requester;
+            ctx.fillStyle = getRandomColor(); // Menggunakan fungsi untuk warna acak dari array yang diizinkan
+            ctx.font = "bold 26px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
+            ctx.fillText(requesterText, 250 + authorTextWidth + 10, 140); // Mengatur posisi "requester" setelah "author"
 
             return frame.toBuffer("image/png");
         } else if (this.theme == 'yui') {
@@ -278,7 +578,7 @@ class mewcard {
                 } catch (error) {
                     // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                     console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                    thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                    thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
                 }
     
                 const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -481,7 +781,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -583,7 +883,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2219,7 +2519,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/mewwme/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
