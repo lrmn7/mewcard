@@ -1,6 +1,6 @@
 {
   "name": "mewcard",
-  "version": "1.7.7",
+  "version": "1.7.8",
   "description": "Experience your Discord bot's music in a visual format.",
   "main": "build/index.js",
   "types": "build/index.d.ts",

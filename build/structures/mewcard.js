@@ -88,7 +88,7 @@ class mewcard {
         if (!this.color) this.setColor('ff0000');
         if (!this.theme) this.setTheme('mewwme');
         if (!this.brightness) this.setBrightness(0);
-        if (!this.thumbnail) this.setThumbnail('https://cdn.meww.me/assets/thumbnail.png');
+        if (!this.thumbnail) this.setThumbnail('https://assetsme.vercel.app/assets/thumbnail.png');
         if (!this.progress) this.setProgress(0);
         if (!this.starttime) this.setStartTime('0:00');
         if (!this.endtime) this.setEndTime('0:00');
@@ -121,7 +121,7 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.meww.me/assets/mews-card1.png",
+                "https://assetsme.vercel.app/assets/mews-card1.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -151,7 +151,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -214,7 +214,7 @@ class mewcard {
     
                 // Daftar URL gambar yang dapat dipilih secara acak
                 const imageUrls = [
-                    "https://cdn.meww.me/assets/be/card/becard.png",
+                    "https://assetsme.vercel.app/assets/be/card/becard.png",
                 ];
     
                 // Fungsi untuk memilih URL gambar secara acak
@@ -244,7 +244,7 @@ class mewcard {
                 } catch (error) {
                     // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                     console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                    thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/be/card/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                    thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/assets/be/card/thumbnail.png`); // Gunakan gambar default atau URL alternatif
                 }
     
                 const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -305,21 +305,21 @@ class mewcard {
             const circleRadius = 20;
             const circleY = 97;
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/KoboKanaeru/1.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/2.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/3.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/4.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/5.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/6.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/7.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/8.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/9.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/10.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/11.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/12.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/13.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/14.png",
-                "https://cdn.meww.me/mewcard/KoboKanaeru/15.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/1.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/2.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/3.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/4.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/5.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/6.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/7.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/8.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/9.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/10.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/11.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/12.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/13.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/14.png",
+                "https://assetsme.vercel.app/mewcard/KoboKanaeru/15.png",
             ];
             function getRandomImageUrl() {
                 const randomIndex = Math.floor(Math.random() * imageUrls.length);
@@ -347,7 +347,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/KoboKanaeru/kobokanaeru.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/KoboKanaeru/kobokanaeru.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -408,17 +408,17 @@ class mewcard {
             const circleRadius = 20;
             const circleY = 97;
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/VestiaZeta/1.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/2.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/3.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/4.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/5.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/6.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/7.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/8.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/9.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/10.png",
-                "https://cdn.meww.me/mewcard/VestiaZeta/11.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/1.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/2.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/3.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/4.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/5.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/6.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/7.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/8.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/9.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/10.png",
+                "https://assetsme.vercel.app/mewcard/VestiaZeta/11.png",
             ];
             function getRandomImageUrl() {
                 const randomIndex = Math.floor(Math.random() * imageUrls.length);
@@ -446,7 +446,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/VestiaZeta/vestiazeta.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/VestiaZeta/vestiazeta.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -507,16 +507,16 @@ class mewcard {
             const circleRadius = 20;
             const circleY = 97;
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/Cute/1.png",
-                "https://cdn.meww.me/mewcard/Cute/2.png",
-                "https://cdn.meww.me/mewcard/Cute/3.png",
-                "https://cdn.meww.me/mewcard/Cute/4.png",
-                "https://cdn.meww.me/mewcard/Cute/5.png",
-                "https://cdn.meww.me/mewcard/Cute/6.png",
-                "https://cdn.meww.me/mewcard/Cute/7.png",
-                "https://cdn.meww.me/mewcard/Cute/8.png",
-                "https://cdn.meww.me/mewcard/Cute/9.png",
-                "https://cdn.meww.me/mewcard/Cute/10.png",
+                "https://assetsme.vercel.app/mewcard/Cute/1.png",
+                "https://assetsme.vercel.app/mewcard/Cute/2.png",
+                "https://assetsme.vercel.app/mewcard/Cute/3.png",
+                "https://assetsme.vercel.app/mewcard/Cute/4.png",
+                "https://assetsme.vercel.app/mewcard/Cute/5.png",
+                "https://assetsme.vercel.app/mewcard/Cute/6.png",
+                "https://assetsme.vercel.app/mewcard/Cute/7.png",
+                "https://assetsme.vercel.app/mewcard/Cute/8.png",
+                "https://assetsme.vercel.app/mewcard/Cute/9.png",
+                "https://assetsme.vercel.app/mewcard/Cute/10.png",
             ];
             function getRandomImageUrl() {
                 const randomIndex = Math.floor(Math.random() * imageUrls.length);
@@ -544,7 +544,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/VestiaZeta/vestiazeta.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/VestiaZeta/vestiazeta.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -607,41 +607,41 @@ class mewcard {
     
                 // Daftar URL gambar yang dapat dipilih secara acak
                 const imageUrls = [
-                    "https://cdn.meww.me/mewcard/mewwme/1.png",
-                    "https://cdn.meww.me/mewcard/mewwme/2.png",
-                    "https://cdn.meww.me/mewcard/mewwme/3.png",
-                    "https://cdn.meww.me/mewcard/mewwme/4.png",
-                    "https://cdn.meww.me/mewcard/mewwme/5.png",
-                    "https://cdn.meww.me/mewcard/mewwme/6.png",
-                    "https://cdn.meww.me/mewcard/mewwme/7.png",
-                    "https://cdn.meww.me/mewcard/mewwme/8.png",
-                    "https://cdn.meww.me/mewcard/mewwme/9.png",
-                    "https://cdn.meww.me/mewcard/mewwme/10.png",
-                    "https://cdn.meww.me/mewcard/mewwme/11.png",
-                    "https://cdn.meww.me/mewcard/mewwme/12.png",
-                    "https://cdn.meww.me/mewcard/mewwme/13.png",
-                    "https://cdn.meww.me/mewcard/mewwme/14.png",
-                    "https://cdn.meww.me/mewcard/mewwme/15.png",
-                    "https://cdn.meww.me/mewcard/mewwme/16.png",
-                    "https://cdn.meww.me/mewcard/mewwme/17.png",
-                    "https://cdn.meww.me/mewcard/mewwme/18.png",
-                    "https://cdn.meww.me/mewcard/mewwme/19.png",
-                    "https://cdn.meww.me/mewcard/mewwme/20.png",
-                    "https://cdn.meww.me/mewcard/mewwme/21.png",
-                    "https://cdn.meww.me/mewcard/mewwme/22.png",
-                    "https://cdn.meww.me/mewcard/mewwme/23.png",
-                    "https://cdn.meww.me/mewcard/mewwme/24.png",
-                    "https://cdn.meww.me/mewcard/mewwme/25.png",
-                    "https://cdn.meww.me/mewcard/mewwme/26.png",
-                    "https://cdn.meww.me/mewcard/mewwme/27.png",
-                    "https://cdn.meww.me/mewcard/mewwme/28.png",
-                    "https://cdn.meww.me/mewcard/mewwme/29.png",
-                    "https://cdn.meww.me/mewcard/mewwme/30.png",
-                    "https://cdn.meww.me/mewcard/mewwme/31.png",
-                    "https://cdn.meww.me/mewcard/mewwme/32.png",
-                    "https://cdn.meww.me/mewcard/mewwme/33.png",
-                    "https://cdn.meww.me/mewcard/mewwme/34.png",
-                    "https://cdn.meww.me/mewcard/mewwme/35.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/1.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/2.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/3.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/4.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/5.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/6.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/7.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/8.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/9.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/10.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/11.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/12.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/13.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/14.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/15.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/16.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/17.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/18.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/19.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/20.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/21.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/22.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/23.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/24.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/25.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/26.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/27.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/28.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/29.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/30.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/31.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/32.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/33.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/34.png",
+                    "https://assetsme.vercel.app/mewcard/mewwme/35.png",
                 ];
     
                 // Fungsi untuk memilih URL gambar secara acak
@@ -671,7 +671,7 @@ class mewcard {
                 } catch (error) {
                     // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                     console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                    thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                    thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
                 }
     
                 const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -737,7 +737,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes1/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes1/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -757,7 +757,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes8/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes8/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -810,41 +810,41 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/themes2/1.png",
-                "https://cdn.meww.me/mewcard/themes2/2.png",
-                "https://cdn.meww.me/mewcard/themes2/3.png",
-                "https://cdn.meww.me/mewcard/themes2/4.png",
-                "https://cdn.meww.me/mewcard/themes2/5.png",
-                "https://cdn.meww.me/mewcard/themes2/6.png",
-                "https://cdn.meww.me/mewcard/themes2/7.png",
-                "https://cdn.meww.me/mewcard/themes2/8.png",
-                "https://cdn.meww.me/mewcard/themes2/9.png",
-                "https://cdn.meww.me/mewcard/themes2/10.png",
-                "https://cdn.meww.me/mewcard/themes2/11.png",
-                "https://cdn.meww.me/mewcard/themes2/12.png",
-                "https://cdn.meww.me/mewcard/themes2/13.png",
-                "https://cdn.meww.me/mewcard/themes2/14.png",
-                "https://cdn.meww.me/mewcard/themes2/15.png",
-                "https://cdn.meww.me/mewcard/themes2/16.png",
-                "https://cdn.meww.me/mewcard/themes2/17.png",
-                "https://cdn.meww.me/mewcard/themes2/18.png",
-                "https://cdn.meww.me/mewcard/themes2/19.png",
-                "https://cdn.meww.me/mewcard/themes2/20.png",
-                "https://cdn.meww.me/mewcard/themes2/21.png",
-                "https://cdn.meww.me/mewcard/themes2/22.png",
-                "https://cdn.meww.me/mewcard/themes2/23.png",
-                "https://cdn.meww.me/mewcard/themes2/24.png",
-                "https://cdn.meww.me/mewcard/themes2/25.png",
-                "https://cdn.meww.me/mewcard/themes2/26.png",
-                "https://cdn.meww.me/mewcard/themes2/27.png",
-                "https://cdn.meww.me/mewcard/themes2/28.png",
-                "https://cdn.meww.me/mewcard/themes2/29.png",
-                "https://cdn.meww.me/mewcard/themes2/30.png",
-                "https://cdn.meww.me/mewcard/themes2/31.png",
-                "https://cdn.meww.me/mewcard/themes2/32.png",
-                "https://cdn.meww.me/mewcard/themes2/33.png",
-                "https://cdn.meww.me/mewcard/themes2/34.png",
-                "https://cdn.meww.me/mewcard/themes2/35.png",
+                "https://assetsme.vercel.app/mewcard/themes2/1.png",
+                "https://assetsme.vercel.app/mewcard/themes2/2.png",
+                "https://assetsme.vercel.app/mewcard/themes2/3.png",
+                "https://assetsme.vercel.app/mewcard/themes2/4.png",
+                "https://assetsme.vercel.app/mewcard/themes2/5.png",
+                "https://assetsme.vercel.app/mewcard/themes2/6.png",
+                "https://assetsme.vercel.app/mewcard/themes2/7.png",
+                "https://assetsme.vercel.app/mewcard/themes2/8.png",
+                "https://assetsme.vercel.app/mewcard/themes2/9.png",
+                "https://assetsme.vercel.app/mewcard/themes2/10.png",
+                "https://assetsme.vercel.app/mewcard/themes2/11.png",
+                "https://assetsme.vercel.app/mewcard/themes2/12.png",
+                "https://assetsme.vercel.app/mewcard/themes2/13.png",
+                "https://assetsme.vercel.app/mewcard/themes2/14.png",
+                "https://assetsme.vercel.app/mewcard/themes2/15.png",
+                "https://assetsme.vercel.app/mewcard/themes2/16.png",
+                "https://assetsme.vercel.app/mewcard/themes2/17.png",
+                "https://assetsme.vercel.app/mewcard/themes2/18.png",
+                "https://assetsme.vercel.app/mewcard/themes2/19.png",
+                "https://assetsme.vercel.app/mewcard/themes2/20.png",
+                "https://assetsme.vercel.app/mewcard/themes2/21.png",
+                "https://assetsme.vercel.app/mewcard/themes2/22.png",
+                "https://assetsme.vercel.app/mewcard/themes2/23.png",
+                "https://assetsme.vercel.app/mewcard/themes2/24.png",
+                "https://assetsme.vercel.app/mewcard/themes2/25.png",
+                "https://assetsme.vercel.app/mewcard/themes2/26.png",
+                "https://assetsme.vercel.app/mewcard/themes2/27.png",
+                "https://assetsme.vercel.app/mewcard/themes2/28.png",
+                "https://assetsme.vercel.app/mewcard/themes2/29.png",
+                "https://assetsme.vercel.app/mewcard/themes2/30.png",
+                "https://assetsme.vercel.app/mewcard/themes2/31.png",
+                "https://assetsme.vercel.app/mewcard/themes2/32.png",
+                "https://assetsme.vercel.app/mewcard/themes2/33.png",
+                "https://assetsme.vercel.app/mewcard/themes2/34.png",
+                "https://assetsme.vercel.app/mewcard/themes2/35.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -874,7 +874,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -937,16 +937,16 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/themes3/1.png",
-                "https://cdn.meww.me/mewcard/themes3/2.png",
-                "https://cdn.meww.me/mewcard/themes3/4.png",
-                "https://cdn.meww.me/mewcard/themes3/5.png",
-                "https://cdn.meww.me/mewcard/themes3/3.png",
-                "https://cdn.meww.me/mewcard/themes3/6.png",
-                "https://cdn.meww.me/mewcard/themes3/7.png",
-                "https://cdn.meww.me/mewcard/themes3/8.png",
-                "https://cdn.meww.me/mewcard/themes3/9.png",
-                "https://cdn.meww.me/mewcard/themes3/10.png",
+                "https://assetsme.vercel.app/mewcard/themes3/1.png",
+                "https://assetsme.vercel.app/mewcard/themes3/2.png",
+                "https://assetsme.vercel.app/mewcard/themes3/4.png",
+                "https://assetsme.vercel.app/mewcard/themes3/5.png",
+                "https://assetsme.vercel.app/mewcard/themes3/3.png",
+                "https://assetsme.vercel.app/mewcard/themes3/6.png",
+                "https://assetsme.vercel.app/mewcard/themes3/7.png",
+                "https://assetsme.vercel.app/mewcard/themes3/8.png",
+                "https://assetsme.vercel.app/mewcard/themes3/9.png",
+                "https://assetsme.vercel.app/mewcard/themes3/10.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -976,7 +976,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1036,20 +1036,20 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/themes4/1.png",
-                "https://cdn.meww.me/mewcard/themes4/2.png",
-                "https://cdn.meww.me/mewcard/themes4/4.png",
-                "https://cdn.meww.me/mewcard/themes4/5.png",
-                "https://cdn.meww.me/mewcard/themes4/3.png",
-                "https://cdn.meww.me/mewcard/themes4/6.png",
-                "https://cdn.meww.me/mewcard/themes4/7.png",
-                "https://cdn.meww.me/mewcard/themes4/8.png",
-                "https://cdn.meww.me/mewcard/themes4/9.png",
-                "https://cdn.meww.me/mewcard/themes4/10.png",
-                "https://cdn.meww.me/mewcard/themes4/11.png",
-                "https://cdn.meww.me/mewcard/themes4/12.png",
-                "https://cdn.meww.me/mewcard/themes4/13.png",
-                "https://cdn.meww.me/mewcard/themes4/14.png",
+                "https://assetsme.vercel.app/mewcard/themes4/1.png",
+                "https://assetsme.vercel.app/mewcard/themes4/2.png",
+                "https://assetsme.vercel.app/mewcard/themes4/4.png",
+                "https://assetsme.vercel.app/mewcard/themes4/5.png",
+                "https://assetsme.vercel.app/mewcard/themes4/3.png",
+                "https://assetsme.vercel.app/mewcard/themes4/6.png",
+                "https://assetsme.vercel.app/mewcard/themes4/7.png",
+                "https://assetsme.vercel.app/mewcard/themes4/8.png",
+                "https://assetsme.vercel.app/mewcard/themes4/9.png",
+                "https://assetsme.vercel.app/mewcard/themes4/10.png",
+                "https://assetsme.vercel.app/mewcard/themes4/11.png",
+                "https://assetsme.vercel.app/mewcard/themes4/12.png",
+                "https://assetsme.vercel.app/mewcard/themes4/13.png",
+                "https://assetsme.vercel.app/mewcard/themes4/14.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -1079,7 +1079,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes4/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes4/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1142,21 +1142,21 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/themes5/1.png",
-                "https://cdn.meww.me/mewcard/themes5/2.png",
-                "https://cdn.meww.me/mewcard/themes5/4.png",
-                "https://cdn.meww.me/mewcard/themes5/5.png",
-                "https://cdn.meww.me/mewcard/themes5/3.png",
-                "https://cdn.meww.me/mewcard/themes5/6.png",
-                "https://cdn.meww.me/mewcard/themes5/7.png",
-                "https://cdn.meww.me/mewcard/themes5/8.png",
-                "https://cdn.meww.me/mewcard/themes5/9.png",
-                "https://cdn.meww.me/mewcard/themes5/10.png",
-                "https://cdn.meww.me/mewcard/themes5/11.png",
-                "https://cdn.meww.me/mewcard/themes5/12.png",
-                "https://cdn.meww.me/mewcard/themes5/13.png",
-                "https://cdn.meww.me/mewcard/themes5/14.png",
-                "https://cdn.meww.me/mewcard/themes5/15.png",
+                "https://assetsme.vercel.app/mewcard/themes5/1.png",
+                "https://assetsme.vercel.app/mewcard/themes5/2.png",
+                "https://assetsme.vercel.app/mewcard/themes5/4.png",
+                "https://assetsme.vercel.app/mewcard/themes5/5.png",
+                "https://assetsme.vercel.app/mewcard/themes5/3.png",
+                "https://assetsme.vercel.app/mewcard/themes5/6.png",
+                "https://assetsme.vercel.app/mewcard/themes5/7.png",
+                "https://assetsme.vercel.app/mewcard/themes5/8.png",
+                "https://assetsme.vercel.app/mewcard/themes5/9.png",
+                "https://assetsme.vercel.app/mewcard/themes5/10.png",
+                "https://assetsme.vercel.app/mewcard/themes5/11.png",
+                "https://assetsme.vercel.app/mewcard/themes5/12.png",
+                "https://assetsme.vercel.app/mewcard/themes5/13.png",
+                "https://assetsme.vercel.app/mewcard/themes5/14.png",
+                "https://assetsme.vercel.app/mewcard/themes5/15.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -1186,7 +1186,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes5/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes5/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1249,16 +1249,16 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/themes6/1.png",
-                "https://cdn.meww.me/mewcard/themes6/2.png",
-                "https://cdn.meww.me/mewcard/themes6/4.png",
-                "https://cdn.meww.me/mewcard/themes6/3.png",
-                "https://cdn.meww.me/mewcard/themes6/5.png",
-                "https://cdn.meww.me/mewcard/themes6/6.png",
-                "https://cdn.meww.me/mewcard/themes6/7.png",
-                "https://cdn.meww.me/mewcard/themes6/8.png",
-                "https://cdn.meww.me/mewcard/themes6/9.png",
-                "https://cdn.meww.me/mewcard/themes6/10.png",
+                "https://assetsme.vercel.app/mewcard/themes6/1.png",
+                "https://assetsme.vercel.app/mewcard/themes6/2.png",
+                "https://assetsme.vercel.app/mewcard/themes6/4.png",
+                "https://assetsme.vercel.app/mewcard/themes6/3.png",
+                "https://assetsme.vercel.app/mewcard/themes6/5.png",
+                "https://assetsme.vercel.app/mewcard/themes6/6.png",
+                "https://assetsme.vercel.app/mewcard/themes6/7.png",
+                "https://assetsme.vercel.app/mewcard/themes6/8.png",
+                "https://assetsme.vercel.app/mewcard/themes6/9.png",
+                "https://assetsme.vercel.app/mewcard/themes6/10.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -1288,7 +1288,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes6/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes6/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1351,26 +1351,26 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/themes7/1.png",
-                "https://cdn.meww.me/mewcard/themes7/2.png",
-                "https://cdn.meww.me/mewcard/themes7/4.png",
-                "https://cdn.meww.me/mewcard/themes7/3.png",
-                "https://cdn.meww.me/mewcard/themes7/5.png",
-                "https://cdn.meww.me/mewcard/themes7/6.png",
-                "https://cdn.meww.me/mewcard/themes7/7.png",
-                "https://cdn.meww.me/mewcard/themes7/9.png",
-                "https://cdn.meww.me/mewcard/themes7/8.png",
-                "https://cdn.meww.me/mewcard/themes7/10.png",
-                "https://cdn.meww.me/mewcard/themes7/11.png",
-                "https://cdn.meww.me/mewcard/themes7/12.png",
-                "https://cdn.meww.me/mewcard/themes7/13.png",
-                "https://cdn.meww.me/mewcard/themes7/14.png",
-                "https://cdn.meww.me/mewcard/themes7/15.png",
-                "https://cdn.meww.me/mewcard/themes7/16.png",
-                "https://cdn.meww.me/mewcard/themes7/17.png",
-                "https://cdn.meww.me/mewcard/themes7/18.png",
-                "https://cdn.meww.me/mewcard/themes7/19.png",
-                "https://cdn.meww.me/mewcard/themes7/20.png",
+                "https://assetsme.vercel.app/mewcard/themes7/1.png",
+                "https://assetsme.vercel.app/mewcard/themes7/2.png",
+                "https://assetsme.vercel.app/mewcard/themes7/4.png",
+                "https://assetsme.vercel.app/mewcard/themes7/3.png",
+                "https://assetsme.vercel.app/mewcard/themes7/5.png",
+                "https://assetsme.vercel.app/mewcard/themes7/6.png",
+                "https://assetsme.vercel.app/mewcard/themes7/7.png",
+                "https://assetsme.vercel.app/mewcard/themes7/9.png",
+                "https://assetsme.vercel.app/mewcard/themes7/8.png",
+                "https://assetsme.vercel.app/mewcard/themes7/10.png",
+                "https://assetsme.vercel.app/mewcard/themes7/11.png",
+                "https://assetsme.vercel.app/mewcard/themes7/12.png",
+                "https://assetsme.vercel.app/mewcard/themes7/13.png",
+                "https://assetsme.vercel.app/mewcard/themes7/14.png",
+                "https://assetsme.vercel.app/mewcard/themes7/15.png",
+                "https://assetsme.vercel.app/mewcard/themes7/16.png",
+                "https://assetsme.vercel.app/mewcard/themes7/17.png",
+                "https://assetsme.vercel.app/mewcard/themes7/18.png",
+                "https://assetsme.vercel.app/mewcard/themes7/19.png",
+                "https://assetsme.vercel.app/mewcard/themes7/20.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -1400,7 +1400,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes7/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes7/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1466,7 +1466,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes8/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes8/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1485,7 +1485,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes8/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes8/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
             
 
@@ -1542,7 +1542,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes9/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes9/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1562,7 +1562,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes9/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes9/no.png`); // Gunakan gambar default atau URL alternatif
             }
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -1619,7 +1619,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes10/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes10/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1639,7 +1639,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes10/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes10/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1699,7 +1699,7 @@ class mewcard {
             const frame = canvas.createCanvas(3264, 765);
             const ctx = frame.getContext("2d");
 
-            const background = await canvas.loadImage("https://cdn.meww.me/mewcard/themes11/1.png");
+            const background = await canvas.loadImage("https://assetsme.vercel.app/mewcard/themes11/1.png");
             ctx.drawImage(background, 0, 0, frame.width, frame.height);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
@@ -1719,7 +1719,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes11/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes11/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1777,7 +1777,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes12/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes12/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1797,7 +1797,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes12/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes12/no.png`); // Gunakan gambar default atau URL alternatif
             }
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -1853,7 +1853,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes13/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes13/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1873,7 +1873,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes13/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes13/no.png`); // Gunakan gambar default atau URL alternatif
             }
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -1960,7 +1960,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes14/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -1978,7 +1978,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -1998,7 +1998,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes14/2.png")
+            const bg2 = await canvas.loadImage("https://assetsme.vercel.app/mewcard/themes14/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 450);
@@ -2088,7 +2088,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes15/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes15/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(500, 500);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -2106,7 +2106,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2126,7 +2126,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes14/2.png")
+            const bg2 = await canvas.loadImage("https://assetsme.vercel.app/mewcard/themes14/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 350);
@@ -2216,7 +2216,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes16/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes16/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(500, 500);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -2234,7 +2234,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes16/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes16/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2254,7 +2254,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes16/2.png")
+            const bg2 = await canvas.loadImage("https://assetsme.vercel.app/mewcard/themes16/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 350);
@@ -2344,7 +2344,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes17/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes17/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(500, 500);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -2362,7 +2362,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2382,7 +2382,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes14/2.png")
+            const bg2 = await canvas.loadImage("https://assetsme.vercel.app/mewcard/themes14/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 350);
@@ -2472,7 +2472,7 @@ class mewcard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes18/1.png`);
+            const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes18/1.png`);
 
             const thumbnailCanvas = canvas.createCanvas(500, 500);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -2490,7 +2490,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes14/no.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2510,7 +2510,7 @@ class mewcard {
 
             thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
 
-            const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes14/2.png")
+            const bg2 = await canvas.loadImage("https://assetsme.vercel.app/mewcard/themes14/2.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 350);
@@ -2568,21 +2568,21 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://cdn.meww.me/mewcard/mewwme1/1.png",
-                "https://cdn.meww.me/mewcard/mewwme1/2.png",
-                "https://cdn.meww.me/mewcard/mewwme1/3.png",
-                "https://cdn.meww.me/mewcard/mewwme1/4.png",
-                "https://cdn.meww.me/mewcard/mewwme1/5.png",
-                "https://cdn.meww.me/mewcard/mewwme1/6.png",
-                "https://cdn.meww.me/mewcard/mewwme1/7.png",
-                "https://cdn.meww.me/mewcard/mewwme1/8.png",
-                "https://cdn.meww.me/mewcard/mewwme1/9.png",
-                "https://cdn.meww.me/mewcard/mewwme1/10.png",
-                "https://cdn.meww.me/mewcard/mewwme1/11.png",
-                "https://cdn.meww.me/mewcard/mewwme1/12.png",
-                "https://cdn.meww.me/mewcard/mewwme1/13.png",
-                "https://cdn.meww.me/mewcard/mewwme1/14.png",
-                "https://cdn.meww.me/mewcard/mewwme1/15.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/1.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/2.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/3.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/4.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/5.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/6.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/7.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/8.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/9.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/10.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/11.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/12.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/13.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/14.png",
+                "https://assetsme.vercel.app/mewcard/mewwme1/15.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -2612,7 +2612,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2676,7 +2676,7 @@ class mewcard {
     
                 // Daftar URL gambar yang dapat dipilih secara acak
                 const imageUrls = [
-                    "https://cdn.meww.me/mewcard/themes19/1.png",
+                    "https://assetsme.vercel.app/mewcard/themes19/1.png",
                 ];
     
                 // Fungsi untuk memilih URL gambar secara acak
@@ -2706,7 +2706,7 @@ class mewcard {
                 } catch (error) {
                     // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                     console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                    thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes19/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                    thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes19/thumbnail.png`); // Gunakan gambar default atau URL alternatif
                 }
     
                 const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -2936,7 +2936,7 @@ class mewcard {
         
                     // Daftar URL gambar yang dapat dipilih secara acak
                     const imageUrls = [
-                        "https://cdn.meww.me/mewcard/blank.png",
+                        "https://assetsme.vercel.app/mewcard/blank.png",
                     ];
         
                     // Fungsi untuk memilih URL gambar secara acak
@@ -2966,7 +2966,7 @@ class mewcard {
                     } catch (error) {
                         // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                         console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                        thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/thumbnail-blank.png`); // Gunakan gambar default atau URL alternatif
+                        thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/thumbnail-blank.png`); // Gunakan gambar default atau URL alternatif
                     }
         
                     const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -3063,7 +3063,7 @@ class mewcard {
                     circleCtx.fillStyle = `#${validatedColor}`;
                     circleCtx.fill();
         
-                    const background = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes20/1.png`);
+                    const background = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes20/1.png`);
         
                     const thumbnailCanvas = canvas.createCanvas(500, 500);
                     const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -3081,7 +3081,7 @@ class mewcard {
                     } catch (error) {
                         // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                         console.error('MUSICARD: Thumbnail image failed to load, not supported');
-                        thumbnailImage = await canvas.loadImage(`https://cdn.meww.me/mewcard/themes20/no.png`); // Gunakan gambar default atau URL alternatif
+                        thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewcard/themes20/no.png`); // Gunakan gambar default atau URL alternatif
                     }
         
                     const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -3101,7 +3101,7 @@ class mewcard {
         
                     thumbnailCtx.drawImage(thumbnailImage, thumbnailX, thumbnailY, thumbnailSize, thumbnailSize, 0, 0, thumbnailCanvas.width, thumbnailCanvas.height);
         
-                    const bg2 = await canvas.loadImage("https://cdn.meww.me/mewcard/themes20/2.png")
+                    const bg2 = await canvas.loadImage("https://assetsme.vercel.app/mewcard/themes20/2.png")
         
                     // Draw the background
                     ctx.drawImage(background, 0, 0, 1280, 350);
