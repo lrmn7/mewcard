@@ -121,7 +121,28 @@ class mewcard {
 
             // Daftar URL gambar yang dapat dipilih secara acak
             const imageUrls = [
-                "https://assetsme.vercel.app/assets/mews-card1.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/1.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/2.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/3.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/4.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/5.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/6.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/7.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/8.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/9.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/10.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/11.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/12.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/13.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/14.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/15.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/16.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/17.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/18.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/19.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/20.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/21.png",
+                "https://assetsme.vercel.app/mewwme/assets/card/22.png",
             ];
 
             // Fungsi untuk memilih URL gambar secara acak
@@ -151,7 +172,7 @@ class mewcard {
             } catch (error) {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported [Lofi & Radio]');
-                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/assets/thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://assetsme.vercel.app/mewwme/assets/card/thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
